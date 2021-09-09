@@ -1,0 +1,58 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+
+footer {
+    background: $lightest;
+    padding-top: $padding-big;
+    padding-bottom: $padding-base;
+
+    h3 {
+        text-transform: uppercase;
+        font-size: $font-size-normal;
+        font-weight: 700;
+    }
+
+    .footer {
+        display: flex;
+        flex-wrap: wrap;
+    
+        &__logo {
+            width: 40%;
+
+            p {
+                width: 80%;
+            }
+
+            img {
+                width: 10rem;
+            }
+        }
+    
+        &__navigation {
+            width: 20%;
+            li {
+                margin-bottom: $margin-small;
+            }
+        }
+    
+        &__socials {
+            width: 20%;
+            li {
+                margin-bottom: $margin-small;
+            }
+        }
+        
+        &__product {
+            width: 20%;
+        }
+    
+        &__copyright {
+            opacity: 50%;
+            margin: 0 auto;
+            p {
+                font-size: $font-size-normal;
+            }
+        }
+    }
+}

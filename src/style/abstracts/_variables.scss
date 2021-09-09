@@ -1,0 +1,92 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+// Font sizes
+$font-size-smaller: 0.8rem;
+$font-size-small: 0.9rem;
+$font-size-normal: 1.05rem;
+$font-size-big: 1.3125rem;
+$font-size-bigger: 1.75rem;
+$font-size-biggest: 2.1rem;
+$font-size-huge: 2.5rem;
+
+
+
+/// Copy text color
+/// @type Color
+$light: #F9F6F2;
+$lighter: #FCFCFB;
+$lightest: #FEFEFF;
+$dark: #FFC49B;
+
+$background: $light;
+
+/// Main brand colors
+/// @type Color
+$primary-purple: #31103A;
+$primary-orange: #F15935;
+
+$dark-orange: #EF411A;
+
+/// Light grey
+/// @type Color
+$light-grey: rgb(237, 237, 237) !default;
+
+/// Medium grey
+/// @type Color
+$mid-grey: rgb(153, 153, 153) !default;
+
+/// Dark grey
+/// @type Color
+$dark-grey: rgb(68, 68, 68) !default;
+
+
+//paddings
+$padding-small: 0.5rem;
+$padding-base: 1rem;
+$padding-bigger: 2rem;
+$padding-big: 3rem;
+$padding-large: 5rem;
+
+
+//margins
+$margin-small: 0.5rem;
+$margin-base: 1rem;
+$margin-bigger: 2rem;
+$margin-big: 3rem;
+$margin-large: 7rem;
+
+// Border radius
+$border-radius-small: 0.5rem;
+$border-radius-base: 1rem;
+$border-radius-large: 2rem;
+
+
+/// Container's maximum width
+/// @type Length
+$max-width: 1180px !default;
+
+
+
+
+
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+$breakpoints: (
+  'small': 320px,
+  'medium': 768px,
+  'large': 1024px,
+) !default;
+
+
+
+
+
+
+/// Relative or absolute URL where all assets are served from
+/// @type String
+/// @example scss - When using a CDN
+///   $base-url: 'http://cdn.example.com/assets/';
+$base-url: '/assets/' !default;

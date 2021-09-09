@@ -1,0 +1,29 @@
+{
+  "name": "portfolio-timds-design",
+  "version": "1.0.0",
+  "description": "My portfolio website 2021, made with 11ty",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "dev": "npx @11ty/eleventy --serve",
+    "start": "npm run dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pgm-timdesae/portfolio-timds-design.git"
+  },
+  "keywords": [
+    "Eleventy",
+    "portfolio"
+  ],
+  "author": "Tim De Saeger",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pgm-timdesae/portfolio-timds-design/issues"
+  },
+  "homepage": "https://github.com/pgm-timdesae/portfolio-timds-design#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy-navigation": "^0.3.2"
+  }
+}

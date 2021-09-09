@@ -1,0 +1,36 @@
+.hero {
+    display: flex;
+    justify-content: space-between;
+    margin-top: $margin-bigger;
+    z-index: -1;
+
+    .hero-image {
+        width: 100%;
+    }
+
+    .hero-text {
+        padding-top: $padding-large;
+        position: absolute;
+        right: 0;
+        width: 40%;
+    
+        h1 {
+            &::before {
+                width: 0;
+            }
+        }
+
+        .hero-text-p {
+            margin-bottom: $margin-base;
+        }
+        
+        .hero-text-p::after {
+            display: block;
+            content: '';
+            width: 100%;
+            height: 1px;
+            background: $primary-orange;
+            transition: all 0.3s ease;
+        }        
+    }    
+}

@@ -1,0 +1,48 @@
+.aboutcontact {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: $margin-big;
+
+    &__subtitel {
+        width: 30%;
+        margin-top: $margin-big;
+    }
+    
+    &__form {
+        width: 60%;
+        padding-top: $padding-big;
+
+        h1 {
+            &::before {
+                width: 0;
+            }
+        }
+
+        form {
+            width: 100%;
+
+            .form-item {
+                margin-bottom: $margin-bigger;
+                border-bottom: 1px solid $primary-orange;
+
+                input, textarea {
+                    background: none;
+                    width: 100%;
+                    height: 3rem;
+                    border: none;
+                }
+
+                textarea {
+                    height: 6rem;
+                }
+            }
+        }
+
+        .user-me {
+            margin-top: $margin-base;
+            width: 10rem;
+            border-radius: $border-radius-base;
+            border: 3px solid $primary-orange;
+        }
+    }    
+}

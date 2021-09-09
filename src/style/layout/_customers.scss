@@ -1,0 +1,34 @@
+.customers-section {
+    margin-top: $margin-large;
+    margin-bottom: $margin-large;
+
+    .customers {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+        &__logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 21%;
+            height: 8rem;
+            text-align: center;
+            /* height: 4rem;
+            padding: 4rem; */
+            img[src$='svg']{
+                min-height: 1rem;
+                max-height: 2rem;
+                filter: brightness(0) invert(0.5);
+            }
+
+            img[src$='svg']:hover{
+                min-height: 1rem;
+                max-height: 2rem;
+                filter: brightness(0) invert(0);
+            }
+
+        }
+    }    
+}

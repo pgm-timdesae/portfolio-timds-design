@@ -1,0 +1,17 @@
+.hero-features {
+
+    margin-top: $margin-base;
+    margin-bottom: $margin-large;
+
+    .hero-features__image {
+        width: 100%;
+        position: relative;
+    }
+
+    .hero-features__text {
+        position: absolute;
+        top: $margin-large;
+        right: 0;
+        width: 40%;
+    }
+}

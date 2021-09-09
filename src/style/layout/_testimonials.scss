@@ -1,0 +1,49 @@
+.testimonials {
+    display: flex;
+    justify-content: space-between;
+    padding: $padding-base;
+
+    .testimonial {
+        width: 30%;
+
+        p {
+            height: 8rem;
+
+            .sign {
+                font-family: futura-pt, sans-serif;
+                color: $primary-orange;
+                font-size: 3rem;
+            }            
+        }
+
+        .testimonial_review {
+            margin-top: $margin-base;
+            display: flex;
+            align-items: center;
+
+            .user {
+                display: inline-block;
+                border: 1px solid $primary-orange;
+                border-radius: 1rem;
+                width: 5rem;
+                margin-right: $margin-base;
+            }            
+
+            &_info {
+                display: flex;
+                flex-direction: column;
+
+                .user-date{
+                    font-weight: 400;
+                }
+                
+                .user-name{
+                    font-weight: 700;
+                    margin-bottom: $margin-small;
+                }                
+            }
+        }        
+    }
+}
+
+

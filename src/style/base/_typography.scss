@@ -1,0 +1,43 @@
+/**
+ * Basic typography style for copy text
+ */
+body {
+    font-family: proxima-nova, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: $primary-purple;
+}
+
+h1 {
+    font-family: futura-pt, sans-serif;
+    font-style: normal;
+    font-size: $font-size-biggest;
+    line-height: 1.2;
+    font-weight: 700;
+    margin-bottom: $margin-bigger;
+}
+
+h2 {
+    font-family: futura-pt, sans-serif;
+    font-size: $font-size-bigger;
+    line-height: 1.2;
+    font-weight: 400;
+    margin-bottom: 0.3rem;
+}
+  
+h3 {
+    font-family: proxima-nova, sans-serif;
+    font-size: $font-size-big;
+    line-height: 1.5;
+    font-weight: 400;
+    margin: 0.7rem 0;
+}
+
+p {
+    font-family: proxima-nova, sans-serif;
+    font-weight: 400;
+    font-size: $font-size-normal;
+    line-height: 1.65rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}

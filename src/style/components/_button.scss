@@ -1,0 +1,73 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+
+
+/* Primary btn */
+.primary-button {
+    display: inline-block;
+    font-size: 1rem;
+    background: $lightest;
+    color: $primary-orange;
+    border-radius: 0.5rem;
+    border: 1px solid $primary-orange;
+    padding: $padding-small $padding-base;
+    box-shadow: 0 8px 6px -6px $primary-orange;
+    transition: all 0.4s ease;
+    margin-top: $margin-base;
+}
+
+.primary-button:hover,
+.primary-button:focus {
+    background: $primary-orange;
+    color: $lighter;
+}
+
+/* Secundary btn */
+.secundary-button {
+    display: inline-block;
+    font-size: 1rem;
+    background: $primary-orange;
+    color: $lightest;
+    border: none;
+    border-radius: 0.5rem;
+    padding: $padding-small $padding-base;
+    box-shadow: 0 8px 6px -6px $primary-orange;
+    transition: all 0.4s ease;
+    margin-top: $margin-base;
+}
+
+.secundary-button:hover,
+.secundary-button:focus {
+    background: $dark-orange;
+    color: $lighter;
+}
+
+/* To top btn */
+
+.to-top-btn {
+    width: 3rem;
+    height: 3rem;
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    background: $primary-orange;
+    color: $lightest;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 8px 6px -6px $primary-orange;
+    transition: all 0.4s ease;
+    background-image: url(../images/arrow-up.svg);
+    background-repeat: no-repeat;
+    background-size: 1.2rem;
+    background-position: center center;
+}
+
+.to-top-btn:hover {
+    background: $dark-orange;
+    background-image: url(../images/arrow-up.svg);
+    background-repeat: no-repeat;
+    background-size: 1.2rem;
+    background-position: center center;
+    transform: translate(0px, -3px);
+}
