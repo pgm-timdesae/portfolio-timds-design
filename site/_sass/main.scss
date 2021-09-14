@@ -23,23 +23,19 @@
 // 4. Layout-related sections
 @import
   'layout/header',
-  'layout/footer',
-  'layout/hero',
-  'layout/cards',
-  'layout/customers',
-  'layout/testimonials';
-
+  'layout/footer';
+  
 // 5. Components
 @import
-  'components/button',
-  'components/jumbotron';
+  'components/button';
 
-// 6. Page-specific styles
+/* // 6. Page-specific styles
 @import
   'pages/home',
   'pages/twocolums',
   'pages/features',
   'pages/blog-detail';
+ */
 
 // 7. Themes
 @import
