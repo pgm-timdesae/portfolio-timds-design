@@ -18,16 +18,14 @@ $font-size-huge: 2.5rem;
 $light: #F9F6F2;
 $lighter: #FCFCFB;
 $lightest: #FEFEFF;
-$dark: #FFC49B;
+$white: #FFF;
+$dark: #000;
 
-$background: $light;
+$background: $white;
 
 /// Main brand colors
 /// @type Color
-$primary-purple: #31103A;
-$primary-orange: #F15935;
-
-$dark-orange: #EF411A;
+$royal-blue: #0000F9;
 
 /// Light grey
 /// @type Color
@@ -45,16 +43,16 @@ $dark-grey: rgb(68, 68, 68) !default;
 //paddings
 $padding-small: 0.5rem;
 $padding-base: 1rem;
-$padding-bigger: 2rem;
-$padding-big: 3rem;
+$padding-big: 2rem;
+$padding-bigger: 3rem;
 $padding-large: 5rem;
 
 
 //margins
 $margin-small: 0.5rem;
 $margin-base: 1rem;
-$margin-bigger: 2rem;
-$margin-big: 3rem;
+$margin-big: 2rem;
+$margin-bigger: 3rem;
 $margin-large: 7rem;
 
 // Border radius

@@ -41,11 +41,11 @@ Horizontal layout
  * Basic styles for links
  */
 a {
-  color: $primary-purple;
+  color: $royal-blue;
   text-decoration: none;
 
   @include on-event {
-    color: $primary-orange;
+    color: $royal-blue;
     transition: all 0.3s ease;
   }
 }

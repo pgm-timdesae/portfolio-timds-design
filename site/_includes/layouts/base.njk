@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en" dir="ltr" prefix="og: https://ogp.me/ns#">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="robots" content="noindex, nofollow" />
+        {% include "components/seo.njk" %}
+        {% include "components/icons.njk" %} 
+        <link type="text/plain" rel="author" href="{{ '/humans.txt' | url }}" />       
+        <link rel="stylesheet" href="{{ '/static/css/main.css' | url }}">
+        <script src="https://kit.fontawesome.com/c7754a245f.js" crossorigin="anonymous"></script>
+        <link href="https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css" rel="stylesheet">
+        <script src="https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js"></script>
+    </head>
+
+    <body class="{{ templateClass }}"> 
+    
+        {% include "components/header.njk" %}
+
+        <main class="main">
+            {{ content | safe }}
+        </main>
+
+        {% include "components/footer.njk" %}
+
+        <script src="{{ '/static/js/main.js' | url }}"></script>
+        <script>
+            mapboxgl.accessToken = 'pk.eyJ1IjoicGdtLW5pY29sYXNjbnVkZGUiLCJhIjoiY2tsZ2x0Y2NxMWxmbzJ2bWozeDMwdWppeiJ9.sL4VU3mdOJq7aS1pb3nNrw';
+            var map = new mapboxgl.Map({
+                container: 'map', // container id
+                style: 'mapbox://styles/pgm-nicolascnudde/cknvhu9n11o5t17n47kwziije', // style URL
+                center: [3.6686911, 51.0873544], // starting position [lng, lat]
+                zoom: 15 // starting zoom
+            });
+
+            // disable map zoom when using scroll
+            map.scrollZoom.disable();
+        </script>
+    </body>
+</html>

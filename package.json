@@ -4,14 +4,14 @@
   "description": "My portfolio website 2021, made with 11ty",
   "main": "index.js",
   "scripts": {
-    "eleventy": "npx @11ty/eleventy",
-    "sass": "sass --style=compressed src/style/main.scss _site/main.css",
+    "sass": "sass --no-source-map site/_sass/main.scss site/_static/css/main.css",
+    "debug:eleventy": "npx eleventy --dryrun",
+    "watch:eleventy": "npx eleventy --serve --port=8080",
     "watch:sass": "npm run sass -- --watch",
-    "watch:eleventy": "eleventy --serve",
-    "start": "npm-run-all sass --parallel watch:*",
-    "build": "npm run eleventy"
-  },
-  "repository": {
+    "serve": "npm-run-all sass --parallel watch:*",
+    "build": "env NODE_ENV=production npm run sass && npx eleventy --pathprefix 'digital-agency-design-studio'"
+    },
+    "repository": {
     "type": "git",
     "url": "git+https://github.com/pgm-timdesae/portfolio-timds-design.git"
   },
