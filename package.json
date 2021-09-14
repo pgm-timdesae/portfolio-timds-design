@@ -4,9 +4,12 @@
   "description": "My portfolio website 2021, made with 11ty",
   "main": "index.js",
   "scripts": {
-    "build": "npx @11ty/eleventy",
-    "dev": "npx @11ty/eleventy --serve",
-    "start": "npm run dev"
+    "eleventy": "npx @11ty/eleventy",
+    "sass": "sass --style=compressed src/style/main.scss _site/main.css",
+    "watch:sass": "npm run sass -- --watch",
+    "watch:eleventy": "eleventy --serve",
+    "start": "npm-run-all sass --parallel watch:*",
+    "build": "npm run eleventy"
   },
   "repository": {
     "type": "git",
@@ -24,6 +27,7 @@
   "homepage": "https://github.com/pgm-timdesae/portfolio-timds-design#readme",
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
-    "@11ty/eleventy-navigation": "^0.3.2"
+    "@11ty/eleventy-navigation": "^0.3.2",
+    "npm-run-all": "^4.1.5"
   }
 }

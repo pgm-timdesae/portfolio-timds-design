@@ -2,14 +2,14 @@
  * Basic typography style for copy text
  */
 body {
-    font-family: proxima-nova, sans-serif;
-    font-weight: 400;
+    font-family: 'Inter', 'Helvetica', sans-serif;
+    font-weight: 300;
     font-style: normal;
     color: $primary-purple;
 }
 
 h1 {
-    font-family: futura-pt, sans-serif;
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-size: $font-size-biggest;
     line-height: 1.2;
@@ -18,15 +18,15 @@ h1 {
 }
 
 h2 {
-    font-family: futura-pt, sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: $font-size-bigger;
     line-height: 1.2;
-    font-weight: 400;
+    font-weight: 500;
     margin-bottom: 0.3rem;
 }
   
 h3 {
-    font-family: proxima-nova, sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: $font-size-big;
     line-height: 1.5;
     font-weight: 400;
@@ -34,8 +34,8 @@ h3 {
 }
 
 p {
-    font-family: proxima-nova, sans-serif;
-    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
     font-size: $font-size-normal;
     line-height: 1.65rem;
     font-weight: 300;
