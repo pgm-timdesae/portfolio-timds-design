@@ -8,7 +8,7 @@
       this.btnToTopElement = document.querySelector('.btn-to-top');
       this.$nav = document.querySelector('.nav__list');
       this.$burger = document.querySelector('.burger');
-      this.$navLinks = document.querySelectorAll('.nav__list-item');
+      this.$socialsNav = document.querySelector('.socials-nav');
     },
     registerEventListeners () {
       // Burger icon
@@ -16,6 +16,9 @@
 
         // toggle btn
         this.$nav.classList.toggle('open');
+
+        //
+        this.$socialsNav.classList.toggle('open');
 
         // toggle icon
         this.$burger.classList.toggle('toggle');
