@@ -9,11 +9,11 @@ body {
 }
 
 h1 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Syne', sans-serif;
     font-style: normal;
     font-size: $font-size-biggest;
     line-height: 1.2;
-    font-weight: 700;
+    font-weight: 600;
     margin-bottom: $margin-bigger;
     color: $royal-blue;
 }
@@ -32,8 +32,8 @@ h3 {
     font-size: $font-size-big;
     line-height: 1.5;
     font-weight: 400;
-    margin: 0.7rem 0;
-    color: $royal-blue;
+    margin-bottom: 0.5rem;
+    color: $dark;
 }
 
 p {

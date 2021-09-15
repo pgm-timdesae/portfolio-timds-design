@@ -1,0 +1,16 @@
+.hero {
+    span {
+        display: block;
+        margin-bottom: $margin-big;
+    }
+
+    .name {
+        font-family: 'Syne', sans-serif;
+        font-size: 2.5rem;
+        color: $royal-blue;
+
+        &:nth-of-type(2) {
+            text-align: right;
+        }
+    }
+}
