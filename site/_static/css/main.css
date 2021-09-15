@@ -421,7 +421,7 @@ strong {
  * Basic typography style for copy text
  */
 body {
-  font-family: "Inter", "Helvetica", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 300;
   font-style: normal;
   color: #0000F9;
@@ -445,7 +445,7 @@ h2 {
 }
 
 h3 {
-  font-family: "Inter", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.3125rem;
   line-height: 1.5;
   font-weight: 400;
@@ -453,7 +453,7 @@ h3 {
 }
 
 p {
-  font-family: "Inter", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 300;
   font-size: 1.05rem;
   line-height: 1.65rem;

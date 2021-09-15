@@ -1,5 +1,18 @@
 <header class="header">
     <div class="h-layout">    
-        <h2>Header</h2>
+        <div class="menu">
+            <div class="menu__info">
+                <span class="logo">
+                    <a href="{{ '/' | url }}" title="Back to the homepage of the {{ site.subdomain }}">TDS</a>
+                </span>
+            </div>
+
+            <nav>
+                <div class="ham-menu">
+                </div>
+            
+                {% include "components/navigation.njk" %}
+            </nav>
+        </div>
     </div>
 </header>
