@@ -1,17 +1,18 @@
 <header class="header">
     <div class="h-layout">    
         <div class="menu">
-            <div class="menu__info">
-                <span class="logo">
-                    <a href="{{ '/' | url }}" title="Back to the homepage of the {{ site.subdomain }}">TDS</a>
-                </span>
-            </div>
-
             <nav>
-                <div class="ham-menu">
+                <div class="logo">
+                    <a href="{{ '/' | url }}" title="Back to the homepage of the {{ site.subdomain }}">Tim De Saeger</a>
                 </div>
             
                 {% include "components/navigation.njk" %}
+
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
             </nav>
         </div>
     </div>

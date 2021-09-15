@@ -18,6 +18,10 @@ html {
     background: $background;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 /* 
 Horizontal layout
 */
@@ -41,8 +45,9 @@ Horizontal layout
  * Basic styles for links
  */
 a {
-  color: $royal-blue;
+  color: $dark;
   text-decoration: none;
+  font-weight: 400;
 
   @include on-event {
     color: $royal-blue;
