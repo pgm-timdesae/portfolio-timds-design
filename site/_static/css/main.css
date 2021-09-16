@@ -531,7 +531,7 @@ p {
 }
 
 footer {
-  background: #0000F9;
+  background: #171717;
   padding: 2rem 0;
   color: #FFF;
 }
@@ -556,7 +556,7 @@ footer .get-in-touch span {
   top: 8vh;
   width: 100vw;
   height: 92vh;
-  background-color: #0000F9;
+  background-color: #171717;
   display: flex;
   flex-direction: column;
   transform: translateX(100%);
@@ -668,14 +668,19 @@ footer .get-in-touch span {
   transform: rotate(45deg) translate(-5px, -6px);
 }
 
+.hero {
+  padding: 5rem 2rem;
+  background: #0000F9;
+}
 .hero span {
   display: block;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 .hero .name {
   font-family: "Syne", sans-serif;
   font-size: 2.5rem;
-  color: #0000F9;
+  font-weight: 400;
+  color: #FFF;
 }
 .hero .name:nth-of-type(2) {
   text-align: right;

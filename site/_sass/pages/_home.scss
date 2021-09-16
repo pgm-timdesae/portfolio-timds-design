@@ -1,13 +1,17 @@
 .hero {
+    padding: $padding-large $padding-big;
+    background: $royal-blue;
+
     span {
         display: block;
-        margin-bottom: $margin-big;
+        margin-bottom: $margin-base;
     }
 
     .name {
         font-family: 'Syne', sans-serif;
         font-size: 2.5rem;
-        color: $royal-blue;
+        font-weight: 400;
+        color: $white;
 
         &:nth-of-type(2) {
             text-align: right;
