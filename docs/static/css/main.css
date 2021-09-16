@@ -383,7 +383,7 @@ Horizontal layout
  * Basic styles for links
  */
 a {
-  color: #171717;
+  color: #FFF;
   text-decoration: none;
   font-weight: 400;
 }
@@ -458,7 +458,7 @@ h3 {
   line-height: 1.5;
   font-weight: 400;
   margin-bottom: 0.5rem;
-  color: #171717;
+  color: #FFF;
 }
 
 p {
@@ -531,8 +531,9 @@ p {
 }
 
 footer {
-  background: #fdf9df;
+  background: #0000F9;
   padding: 2rem 0;
+  color: #FFF;
 }
 footer .get-in-touch span {
   display: block;
@@ -555,7 +556,7 @@ footer .get-in-touch span {
   top: 8vh;
   width: 100vw;
   height: 92vh;
-  background-color: #171717;
+  background-color: #0000F9;
   display: flex;
   flex-direction: column;
   transform: translateX(100%);
