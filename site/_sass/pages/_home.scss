@@ -18,3 +18,29 @@
         }
     }
 }
+
+.work-on-home {
+    padding-top: $padding-large;
+    padding-bottom: $padding-large ;
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        width: 15rem;
+        margin: auto;
+
+        h3 {
+            color: $royal-blue;
+        }
+
+        img {
+            width: 15rem;
+            height: 20rem;    
+            object-fit: cover;
+
+            &:hover {
+                scale: 1.5;
+            }
+        }
+    }
+}
