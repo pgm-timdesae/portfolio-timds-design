@@ -1,6 +1,6 @@
 .hero {
-    padding: $padding-large $padding-big;
-    background: $royal-blue;
+    padding: $padding-large $padding-bigger;
+    background: $white;
 
     span {
         display: block;
@@ -9,9 +9,9 @@
 
     .name {
         font-family: 'Syne', sans-serif;
-        font-size: 2.5rem;
+        font-size: 2rem;
         font-weight: 400;
-        color: $white;
+        color: $royal-blue;
 
         &:nth-of-type(2) {
             text-align: right;
@@ -20,7 +20,6 @@
 }
 
 .work-on-home {
-    padding-top: $padding-large;
     padding-bottom: $padding-large ;
 
     .card {
@@ -28,6 +27,10 @@
         flex-direction: column;
         width: 15rem;
         margin: auto;
+
+        h4 {
+            color: $dark;
+        }
 
         h3 {
             color: $royal-blue;

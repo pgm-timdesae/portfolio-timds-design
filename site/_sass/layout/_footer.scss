@@ -1,7 +1,21 @@
 footer {
-    background: $dark;
-    padding: 2rem 0;
-    color: $white;
+    padding-bottom: 2rem ;
+    color: $dark;
+    text-align: center;
+    border-top: 2px solid $royal-blue;
+
+    a, p {
+        color: $dark;
+        font-weight: 300;
+        margin-top: 0;
+        margin-bottom: $margin-base;
+    }
+
+    .logo-footer {
+        img {
+            width: 10rem;
+        }
+    }
 
     .get-in-touch {
         span {
