@@ -530,6 +530,15 @@ p {
   width: 1px;
 }
 
+.cards .card__img h4 {
+  color: #171717;
+}
+.cards .card__img img {
+  width: 50%;
+  height: 25rem;
+  object-fit: cover;
+}
+
 footer {
   padding-bottom: 2rem;
   color: #171717;
@@ -566,13 +575,13 @@ footer .get-in-touch span {
   top: 8vh;
   width: 100vw;
   height: 92vh;
-  background-color: #0000F9;
   display: flex;
   flex-direction: column;
   transform: translateX(100%);
   transition: transform 0.5s ease-in;
   margin: 0;
   padding: 3rem;
+  background-color: #0000F9;
 }
 .menu nav .nav__list-item {
   display: none;
@@ -597,18 +606,21 @@ footer .get-in-touch span {
 .menu nav .open {
   transform: translateX(0);
 }
+.menu nav .open .nav__list {
+  background-color: #0000F9;
+}
 .menu nav .open .nav__list-item {
   display: block;
 }
 .menu nav .open .nav__list-item a {
   color: #FFF;
   font-size: 1.75rem;
-  font-weight: 400;
-  opacity: 0.6;
+  font-weight: 500;
+  opacity: 1;
   transition: 0.3s all ease-in;
 }
 .menu nav .open .nav__list-item a:hover {
-  opacity: 1;
+  opacity: 0.6;
 }
 .menu nav .open .socials-nav-item {
   display: block;
@@ -652,15 +664,21 @@ footer .get-in-touch span {
     top: 0;
     height: 8vh;
     justify-content: space-around;
-    background-color: aqua;
     display: flex;
     flex-direction: row;
     align-items: center;
     transform: translateX(0);
+    background-color: #FFF;
   }
   .menu nav .nav__list-item {
     display: block;
     transform: translateX(0);
+  }
+  .menu nav .nav__list-item a {
+    color: #0000F9;
+    font-size: 1.3125rem;
+    font-weight: 400;
+    transition: 0.3s all ease-in;
   }
   .menu nav .burger {
     display: none;
@@ -698,24 +716,4 @@ footer .get-in-touch span {
 
 .work-on-home {
   padding-bottom: 5rem;
-}
-.work-on-home .card {
-  display: flex;
-  flex-direction: column;
-  width: 15rem;
-  margin: auto;
-}
-.work-on-home .card h4 {
-  color: #171717;
-}
-.work-on-home .card h3 {
-  color: #0000F9;
-}
-.work-on-home .card img {
-  width: 15rem;
-  height: 20rem;
-  object-fit: cover;
-}
-.work-on-home .card img:hover {
-  scale: 1.5;
 }

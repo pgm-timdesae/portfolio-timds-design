@@ -14,11 +14,11 @@ description: Welcome to the portfolio of designer & developer Tim De Saeger
 </section>
 
 <section class="work-on-home h-layout">
-    <div class="card">
-        <a href="/">
-            <h4>01</h4>
-            <img src="./static/images/hiking-1.jpg">
-            <h3>HiKing application</h3>  
-        </a>
-    </div>
+    <h2>My work</h2>
+    
+    <ul class="cards">
+        {% for work in collections.works | highlighted %}
+            {% include "components/work.njk" %}
+        {% endfor %}
+    </ul>
 </section>

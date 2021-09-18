@@ -1,0 +1,18 @@
+.cards {
+    .card {
+        &__text {
+        }
+
+        &__img {
+            h4 {
+                color: $dark;
+            }
+
+            img {
+                width: 50%;
+                height: 25rem;
+                object-fit: cover;
+            }
+        }
+    }
+}
