@@ -530,13 +530,26 @@ p {
   width: 1px;
 }
 
-.cards .card__img h4 {
+.cards li {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.cards li .card__text h3 {
+  color: #171717;
+  opacity: 0.8;
+}
+.cards li .card__img h4 {
   color: #171717;
 }
-.cards .card__img img {
-  width: 50%;
-  height: 25rem;
+.cards li .card__img img {
+  width: 17rem;
+  height: 22rem;
   object-fit: cover;
+  transition: 0.3s ease-in-out all;
+}
+.cards li .card__img img:hover {
+  transform: scale(1.1);
 }
 
 footer {

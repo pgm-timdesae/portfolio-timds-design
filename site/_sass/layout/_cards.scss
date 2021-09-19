@@ -1,17 +1,32 @@
 .cards {
-    .card {
-        &__text {
-        }
+    li {
+        display: flex;
+        justify-content: center;
+        margin-bottom: $margin-big;
 
-        &__img {
-            h4 {
-                color: $dark;
+        .card {
+            &__text {
+                h3 {
+                    color: $dark;
+                    opacity: 0.8;
+                }
             }
+    
+            &__img {
+                h4 {
+                    color: $dark;
+                }
+    
+                img {
+                    width: 17rem;
+                    height: 22rem;
+                    object-fit: cover;
+                    transition: 0.3s ease-in-out all;
 
-            img {
-                width: 50%;
-                height: 25rem;
-                object-fit: cover;
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
             }
         }
     }
