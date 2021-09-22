@@ -1,0 +1,32 @@
+.banner-contact {
+    background: $royal-blue;
+    padding-top: $padding-big;
+    padding-bottom: $padding-big;
+    color: $white;
+
+    .banner__name {
+        h2 {
+            color: $white;
+        }
+    }
+
+    .banner__description {
+        p {
+            color: $white;
+        }
+
+        a {
+            color: $white;
+            font-size: $font-size-big;
+            transition: all 0.4s ease;
+
+            i {
+                color: $white;
+            }
+
+            &:hover {
+                margin-left: $margin-base;
+            }
+        }
+    }
+}

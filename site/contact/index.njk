@@ -1,12 +1,45 @@
 ---
 layout: layouts/base.njk
-title: Contact
+title: "Bel me, schrijf me, laat me vlug iets weten!"
 tags: false
 eleventyNavigation:
   key: Start a project
   order: 4
 ---
 
-<section class="contactpage h-layout">
-    <h1>Bel me, schrijf me, laat me vlug iets weten!</h1>
+<section class="contact h-layout">
+  <h1>{{ title }}</h1>
+
+  <p>Questions? Comments? Clever remarks? We'd love to hear from you!</p>
+
+  <form class="contact__form" action="#">
+    <div>
+      <label for="firstname">Name</label>
+      <input type="text" name="firstname" id="firstname" required>
+    </div>
+    
+    <div>
+      <label for="lastname">Last name</label>
+      <input type="text" name="lastname" id="lastname" required>
+    </div>
+    
+    <div>
+      <label for="tel">Phone number</label>
+      <input type="tel" name="tel" id="tel">
+    </div>
+
+    <div>  
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" required>
+    </div>
+
+    <div>  
+      <label for="message">Message</label>
+      <textarea name="message" id="message" rows="5"></textarea>
+    </div>
+
+    <div>
+      <input type="submit" value="send">
+    </div>
+  </form>
 </section>

@@ -363,7 +363,7 @@ Horizontal layout
   width: 76rem;
   max-width: 100%;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 1.5rem;
   position: relative;
 }
 
@@ -379,12 +379,10 @@ Horizontal layout
  * Basic styles for links
  */
 a {
-  color: #FFF;
   text-decoration: none;
   font-weight: 400;
 }
 a:hover, a:active, a:focus {
-  color: #0000F9;
   transition: all 0.3s ease;
 }
 
@@ -440,11 +438,11 @@ h1 {
 }
 
 h2 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Syne", sans-serif;
   font-size: 1.75rem;
-  line-height: 1.2;
+  line-height: 1;
   font-weight: 500;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.1rem;
   color: #0000F9;
 }
 
@@ -558,6 +556,30 @@ p {
     width: 50%;
   }
 }
+.banner-contact {
+  background: #0000F9;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  color: #FFF;
+}
+.banner-contact .banner__name h2 {
+  color: #FFF;
+}
+.banner-contact .banner__description p {
+  color: #FFF;
+}
+.banner-contact .banner__description a {
+  color: #FFF;
+  font-size: 1.3125rem;
+  transition: all 0.4s ease;
+}
+.banner-contact .banner__description a i {
+  color: #FFF;
+}
+.banner-contact .banner__description a:hover {
+  margin-left: 1rem;
+}
+
 footer {
   padding-bottom: 2rem;
   color: #171717;
@@ -573,8 +595,27 @@ footer a, footer p {
 footer .logo-footer svg {
   width: 10rem;
 }
-footer .get-in-touch span {
-  display: block;
+footer .get-in-touch {
+  margin-bottom: 2rem;
+}
+footer .get-in-touch a:hover {
+  color: #0000F9;
+}
+footer .socials-footer a {
+  display: inline-block;
+  margin-bottom: 1rem;
+  transition: ease-in-out 0.3s all;
+}
+footer .socials-footer a i {
+  margin-left: 0.5rem;
+  transform: rotate(-45deg);
+}
+footer .socials-footer a:hover {
+  color: #0000F9;
+  margin-left: 1rem;
+}
+footer .socials-footer a:hover i {
+  transform: rotate(0);
 }
 
 /* Primary btn */
@@ -649,7 +690,7 @@ footer .get-in-touch span {
   display: flex;
   flex-direction: column;
   transform: translateY(-100%);
-  transition: transform 0.5s ease-in;
+  transition: transform 0.4s ease-in-out;
   margin: 0;
   padding: 3rem;
   background-color: #0000F9;
@@ -667,7 +708,7 @@ footer .get-in-touch span {
   top: 70vh;
   padding: 3rem;
   transform: translateY(-100%);
-  transition: transform 0.5s ease-in;
+  transition: transform 0.4s ease-in;
   margin: 0;
 }
 .menu nav .socials-nav-item {
@@ -687,10 +728,10 @@ footer .get-in-touch span {
 }
 .menu nav .open .nav__list-item a {
   color: #FFF;
-  font-size: 1.75rem;
+  font-size: 2.1rem;
   font-weight: 500;
   opacity: 1;
-  transition: 0.3s all ease-in;
+  transition: 0.4s all ease-in;
 }
 .menu nav .open .nav__list-item a:hover {
   opacity: 0.6;
@@ -702,11 +743,10 @@ footer .get-in-touch span {
   color: #FFF;
   font-size: 1.05rem;
   font-weight: 400;
-  opacity: 0.6;
-  transition: 0.3s all ease-in;
+  transition: 0.4s all ease-in;
 }
 .menu nav .open .socials-nav-item a:hover {
-  opacity: 1;
+  opacity: 0.6;
 }
 .menu nav .burger {
   display: block;
@@ -775,7 +815,7 @@ footer .get-in-touch span {
 }
 
 .hero {
-  padding: 5rem 3rem;
+  padding: 5rem 2rem;
   background: #FFF;
 }
 .hero span {

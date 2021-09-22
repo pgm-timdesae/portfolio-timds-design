@@ -18,8 +18,32 @@ footer {
     }
 
     .get-in-touch {
-        span {
-            display: block;
+        margin-bottom: $margin-big;
+
+        a:hover {
+            color: $royal-blue;
+        }
+    }
+
+    .socials-footer {
+        a {
+            display: inline-block;
+            margin-bottom: $margin-base;
+            transition: ease-in-out 0.3s all;
+
+            i {
+                margin-left: $margin-small;
+                transform: rotate(-45deg);
+            }
+
+            &:hover {
+                color: $royal-blue;
+                margin-left: $margin-base;
+
+                i {
+                    transform: rotate(0);
+                }
+            }
         }
     }
 }
