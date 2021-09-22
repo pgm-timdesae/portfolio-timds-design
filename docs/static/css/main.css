@@ -564,7 +564,7 @@ footer a, footer p {
   margin-top: 0;
   margin-bottom: 1rem;
 }
-footer .logo-footer img {
+footer .logo-footer svg {
   width: 10rem;
 }
 footer .get-in-touch span {
@@ -580,7 +580,7 @@ footer .get-in-touch span {
   min-height: 8vh;
   z-index: 100;
 }
-.menu nav .logo img {
+.menu nav .logo svg {
   height: 8vh;
 }
 .menu nav .nav__list {
