@@ -356,10 +356,6 @@ html {
   background: #FFF;
 }
 
-body {
-  overflow-x: hidden;
-}
-
 /* 
 Horizontal layout
 */
@@ -637,6 +633,10 @@ footer .get-in-touch span {
   min-height: 8vh;
   z-index: 100;
 }
+.menu nav .logo {
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
 .menu nav .logo svg {
   height: 8vh;
 }
@@ -711,6 +711,8 @@ footer .get-in-touch span {
 .menu nav .burger {
   display: block;
   cursor: pointer;
+  padding-top: 1rem;
+  padding-right: 1rem;
 }
 .menu nav .burger > div {
   width: 25px;
@@ -718,6 +720,9 @@ footer .get-in-touch span {
   background-color: #171717;
   margin: 5px;
   transition: all 0.3s ease;
+}
+.menu nav .burger.toggle > div {
+  background-color: #FFF;
 }
 
 @media (min-width: 48rem) {

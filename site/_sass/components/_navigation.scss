@@ -9,6 +9,9 @@
         z-index: 100;
 
         .logo {
+            padding-top: 1rem;
+            padding-left: 1rem;
+
             svg {
                 height: 8vh;
             }
@@ -98,6 +101,8 @@
         .burger {
             display: block;
             cursor: pointer;
+            padding-top: 1rem;
+            padding-right: 1rem;
 
             > div {
                 width: 25px;
@@ -105,6 +110,12 @@
                 background-color: $dark;
                 margin: 5px;
                 transition: all 0.3s ease;
+            }
+        }
+
+        .burger.toggle {
+            > div {
+                background-color: $white;
             }
         }
     }
