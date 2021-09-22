@@ -17,12 +17,12 @@
         .nav__list {
             display: none;
             position: absolute;
-            top: 8vh;
+            top: 0;
             width: 100vw;
-            height: 92vh;
+            height: 100vh;
             display: flex;
             flex-direction: column;
-            transform: translateX(100%);
+            transform: translateY(-100%);
             transition: transform 0.5s ease-in;
             margin: 0;
             padding: $padding-bigger;
@@ -43,7 +43,7 @@
             width: 100vw;
             top: 70vh;
             padding: $padding-bigger;
-            transform: translateX(100%);
+            transform: translateY(-100%);
             transition: transform 0.5s ease-in;
             margin: 0;
             
@@ -54,7 +54,8 @@
         }
 
         .open {
-            transform: translateX(0);
+            transform: translateY(0);
+            padding-top: $padding-large;
 
             .nav__list {
                 display: block;

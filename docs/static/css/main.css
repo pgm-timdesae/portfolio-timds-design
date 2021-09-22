@@ -643,12 +643,12 @@ footer .get-in-touch span {
 .menu nav .nav__list {
   display: none;
   position: absolute;
-  top: 8vh;
+  top: 0;
   width: 100vw;
-  height: 92vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  transform: translateX(100%);
+  transform: translateY(-100%);
   transition: transform 0.5s ease-in;
   margin: 0;
   padding: 3rem;
@@ -666,7 +666,7 @@ footer .get-in-touch span {
   width: 100vw;
   top: 70vh;
   padding: 3rem;
-  transform: translateX(100%);
+  transform: translateY(-100%);
   transition: transform 0.5s ease-in;
   margin: 0;
 }
@@ -675,7 +675,8 @@ footer .get-in-touch span {
   margin-bottom: 1rem;
 }
 .menu nav .open {
-  transform: translateX(0);
+  transform: translateY(0);
+  padding-top: 5rem;
 }
 .menu nav .open .nav__list {
   display: block;
