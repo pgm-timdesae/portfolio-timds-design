@@ -584,6 +584,7 @@ footer .get-in-touch span {
   height: 8vh;
 }
 .menu nav .nav__list {
+  display: none;
   position: absolute;
   top: 8vh;
   width: 100vw;
@@ -620,6 +621,7 @@ footer .get-in-touch span {
   transform: translateX(0);
 }
 .menu nav .open .nav__list {
+  display: block;
   background-color: #0000F9;
 }
 .menu nav .open .nav__list-item {
