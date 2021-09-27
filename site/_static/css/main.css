@@ -815,8 +815,12 @@ footer .socials-footer a:hover i {
 }
 
 .hero {
-  padding: 5rem 2rem;
+  padding: 12rem 2rem;
   background: #FFF;
+  background-image: url(../images/mesh-gradient.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 15% 30%;
 }
 .hero span {
   display: block;

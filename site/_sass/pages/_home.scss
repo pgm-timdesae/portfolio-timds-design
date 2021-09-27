@@ -1,6 +1,10 @@
 .hero {
-    padding: $padding-large $padding-big;
+    padding: 12rem $padding-big;
     background: $white;
+    background-image: url(../images/mesh-gradient.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 15% 30%;
 
     span {
         display: block;
