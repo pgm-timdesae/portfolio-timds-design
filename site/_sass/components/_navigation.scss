@@ -1,7 +1,6 @@
 .menu {
     nav {
         position: relative;
-        background-color: $white;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -104,10 +103,10 @@
             padding-right: 1rem;
 
             > div {
-                width: 25px;
+                width: 27px;
                 height: 3px;
-                background-color: $dark;
-                margin: 5px;
+                background-color: $white;
+                margin: 6px;
                 transition: all 0.3s ease;
             }
         }
@@ -169,7 +168,7 @@
 }
 
 .toggle .line1 {
-    transform: rotate(-45deg) translate(-5px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
 }
 
 .toggle .line2 {
@@ -177,5 +176,5 @@
 }
 
 .toggle .line3 {
-    transform: rotate(45deg) translate(-5px, -6px);
+    transform: rotate(45deg) translate(-6px, -6px);
 }

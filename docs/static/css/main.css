@@ -667,7 +667,6 @@ footer .socials-footer a:hover i {
 }
 .menu nav {
   position: relative;
-  background-color: #FFF;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -755,10 +754,10 @@ footer .socials-footer a:hover i {
   padding-right: 1rem;
 }
 .menu nav .burger > div {
-  width: 25px;
+  width: 27px;
   height: 3px;
-  background-color: #171717;
-  margin: 5px;
+  background-color: #FFF;
+  margin: 6px;
   transition: all 0.3s ease;
 }
 .menu nav .burger.toggle > div {
@@ -803,7 +802,7 @@ footer .socials-footer a:hover i {
   }
 }
 .toggle .line1 {
-  transform: rotate(-45deg) translate(-5px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
 }
 
 .toggle .line2 {
@@ -811,11 +810,12 @@ footer .socials-footer a:hover i {
 }
 
 .toggle .line3 {
-  transform: rotate(45deg) translate(-5px, -6px);
+  transform: rotate(45deg) translate(-6px, -6px);
 }
 
 .hero {
-  padding: 12rem 2rem;
+  margin-top: -5rem;
+  padding: 16rem 2rem;
   background: #FFF;
   background-image: url(../images/mesh-gradient.png);
   background-repeat: no-repeat;
@@ -828,12 +828,13 @@ footer .socials-footer a:hover i {
 }
 .hero .name {
   font-family: "Syne", sans-serif;
-  font-size: 2rem;
-  font-weight: 400;
+  font-size: 2.2rem;
+  font-weight: 500;
   color: #0000F9;
 }
 .hero .name:nth-of-type(2) {
   text-align: right;
+  color: #171717;
 }
 .hero .intro {
   color: #171717;
