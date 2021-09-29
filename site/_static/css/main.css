@@ -670,7 +670,7 @@ footer .socials-footer a:hover i {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 8vh;
+  height: 6rem;
   z-index: 100;
 }
 .menu nav .logo {
@@ -678,7 +678,7 @@ footer .socials-footer a:hover i {
   padding-left: 1rem;
 }
 .menu nav .logo svg {
-  height: 8vh;
+  height: 5rem;
 }
 .menu nav .nav__list {
   display: none;
@@ -702,6 +702,7 @@ footer .socials-footer a:hover i {
   color: #171717;
 }
 .menu nav .socials-nav {
+  display: none;
   position: absolute;
   width: 100vw;
   top: 70vh;
@@ -790,6 +791,7 @@ footer .socials-footer a:hover i {
   .menu nav .nav__list-item {
     display: block;
     transform: translateX(0);
+    margin-bottom: 0;
   }
   .menu nav .nav__list-item a {
     color: #0000F9;
@@ -813,14 +815,19 @@ footer .socials-footer a:hover i {
   transform: rotate(45deg) translate(-6px, -6px);
 }
 
-.hero {
-  margin-top: -5rem;
-  padding: 16rem 2rem;
-  background: #FFF;
+.bg-mesh {
+  margin-top: -6rem;
+  position: absolute;
+  width: 100%;
+  height: 30rem;
   background-image: url(../images/mesh-gradient.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 15% 30%;
+}
+
+.hero {
+  padding: 10rem 2rem;
 }
 .hero span {
   display: block;

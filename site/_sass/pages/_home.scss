@@ -1,11 +1,16 @@
-.hero {
-    margin-top: -5rem;
-    padding: 16rem $padding-big;
-    background: $white;
+.bg-mesh {
+    margin-top: -6rem;
+    position: absolute;
+    width: 100%;
+    height: 30rem;
     background-image: url(../images/mesh-gradient.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 15% 30%;
+}
+
+.hero {
+    padding: 10rem $padding-big;
 
     span {
         display: block;

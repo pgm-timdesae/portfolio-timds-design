@@ -4,7 +4,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        min-height: 8vh;
+        height: 6rem;
         z-index: 100;
 
         .logo {
@@ -12,7 +12,7 @@
             padding-left: 1rem;
 
             svg {
-                height: 8vh;
+                height: 5rem;
             }
         }
 
@@ -41,6 +41,7 @@
         }
 
         .socials-nav {
+            display: none;
             position: absolute;
             width: 100vw;
             top: 70vh;
@@ -147,6 +148,7 @@
                 &-item {
                     display: block;
                     transform: translateX(0);
+                    margin-bottom: 0;
 
                     a {
                         color: $royal-blue;
