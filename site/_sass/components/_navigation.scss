@@ -70,14 +70,26 @@
                     display: block;
 
                     a {
+                        position: relative;
                         color: $white;
                         font-size: $font-size-biggest;
                         font-weight: 500;
                         opacity: 1;
                         transition: 0.4s all ease-in;
 
-                        &:hover {
-                            opacity: 0.6;
+                        &:after {
+                            content: "";
+                            position: absolute;
+                            background-color: $white;
+                            height: 3px;
+                            width: 0;
+                            left: 0;
+                            bottom: -10px;
+                            transition: 0.3s all ease-in;
+                        }
+
+                        &:hover:after {
+                            width: 100%;
                         }
                     } 
                 }
