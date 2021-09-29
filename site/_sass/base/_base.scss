@@ -27,7 +27,17 @@ Horizontal layout
     margin: 0 auto;
     padding: 0 1.5rem;
     position: relative;
-  }
+}
+
+@media (min-width: 48rem) {
+    .h-layout {
+        width: 76rem;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0 1rem;
+        position: relative;
+    }
+}
 
 .h-layout--small {
     width: 50rem;

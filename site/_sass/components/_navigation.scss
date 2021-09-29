@@ -1,6 +1,6 @@
 .menu {
     padding-left: 0;
-    
+
     nav {
         position: relative;
         display: flex;
@@ -137,10 +137,10 @@
     
             .nav__list {
                 position: relative;
-                width: 60%;
+                width: 50%;
                 top: 0;
                 height: 8vh;
-                justify-content: space-around;
+                justify-content: space-between;
                 display: flex;
                 flex-direction: row;
                 align-items: center;
@@ -148,17 +148,30 @@
                 background: none;
     
                 &-item {
-                    display: block;
+                    display: block; 
                     transform: translateX(0);
                     margin-bottom: 0;
 
                     a {
+                        position: relative;
                         color: $white;
                         font-size: $font-size-big;
                         font-weight: 400;
                         transition: 0.3s all ease-in;
 
-                        &:hover {
+                        &:after {
+                            content: "";
+                            position: absolute;
+                            background-color: $white;
+                            height: 3px;
+                            width: 0;
+                            left: 0;
+                            bottom: -10px;
+                            transition: 0.3s all ease-in;
+                        }
+
+                        &:hover:after {
+                            width: 100%;
                         }
                     } 
                 }

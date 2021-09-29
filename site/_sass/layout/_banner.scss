@@ -1,20 +1,20 @@
 .banner-contact {
-    background: $royal-blue;
+    background: $dark;
     padding-top: $padding-big;
     padding-bottom: $padding-big;
     color: $white;
 
-    .banner__name {
+    .banner__text {
         h2 {
+            color: $white;
+        }
+
+        p {
             color: $white;
         }
     }
 
-    .banner__description {
-        p {
-            color: $white;
-        }
-
+    .banner__link {
         a {
             color: $white;
             font-size: $font-size-big;
@@ -26,6 +26,33 @@
 
             &:hover {
                 margin-left: $margin-base;
+            }
+        }
+    }
+}
+
+@media (min-width: 48rem) {
+    .banner-contact {
+        padding-top: $padding-bigger;
+        padding-bottom: $padding-bigger;
+    
+        &-flex {
+            display: flex;
+    
+            .banner__text {
+                width: 50%;
+            }
+    
+            .banner__link {
+                margin-left: $margin-big;
+
+                a {
+                    font-size: $font-size-biggest;
+                            
+                    i {
+                        font-size: $font-size-biggest;
+                    }
+                }        
             }
         }
     }

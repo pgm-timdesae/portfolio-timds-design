@@ -2,7 +2,6 @@ footer {
     padding-bottom: 2rem ;
     color: $dark;
     text-align: center;
-    border-top: 2px solid $royal-blue;
 
     a, p {
         color: $dark;
@@ -43,6 +42,24 @@ footer {
                 i {
                     transform: rotate(0);
                 }
+            }
+        }
+    }
+}
+
+@media (min-width: 48rem) {
+    .footer {
+        padding-top: $padding-bigger;
+        padding-bottom: $padding-bigger;
+        
+        &__flex {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+
+            .get-in-touch {
+                margin-bottom: 0;
             }
         }
     }
