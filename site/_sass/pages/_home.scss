@@ -38,3 +38,32 @@
 .work-on-home {
     padding-bottom: $padding-large ;
 }
+
+@media (min-width: 48rem) {
+    .bg-mesh {
+        height: 100vh;
+        background-position: right 50%;
+    }
+
+    .hero {
+        width: 50%;
+    
+        span {
+        }
+    
+        .name {
+            font-size: 3rem;
+    
+            &:nth-of-type(2) {
+                text-align: right;
+                color: $dark;
+            }
+        }
+    
+        .intro {
+            color: $dark;
+            margin-top: $margin-big;
+        }
+    }
+    
+}

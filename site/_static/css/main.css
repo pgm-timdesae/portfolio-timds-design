@@ -665,6 +665,9 @@ footer .socials-footer a:hover i {
     display: block;
   }
 }
+.menu {
+  padding-left: 0;
+}
 .menu nav {
   position: relative;
   display: flex;
@@ -786,7 +789,7 @@ footer .socials-footer a:hover i {
     flex-direction: row;
     align-items: center;
     transform: translateX(0);
-    background-color: #FFF;
+    background: none;
   }
   .menu nav .nav__list-item {
     display: block;
@@ -794,7 +797,7 @@ footer .socials-footer a:hover i {
     margin-bottom: 0;
   }
   .menu nav .nav__list-item a {
-    color: #0000F9;
+    color: #FFF;
     font-size: 1.3125rem;
     font-weight: 400;
     transition: 0.3s all ease-in;
@@ -850,4 +853,26 @@ footer .socials-footer a:hover i {
 
 .work-on-home {
   padding-bottom: 5rem;
+}
+
+@media (min-width: 48rem) {
+  .bg-mesh {
+    height: 100vh;
+    background-position: right 50%;
+  }
+
+  .hero {
+    width: 50%;
+  }
+  .hero .name {
+    font-size: 3rem;
+  }
+  .hero .name:nth-of-type(2) {
+    text-align: right;
+    color: #171717;
+  }
+  .hero .intro {
+    color: #171717;
+    margin-top: 2rem;
+  }
 }
