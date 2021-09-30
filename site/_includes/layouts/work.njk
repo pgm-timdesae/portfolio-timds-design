@@ -2,27 +2,30 @@
 layout: layouts/base.njk
 ---
 
-<section class="h-layout">
-    <div class="work__heading">
+<div class="work">
+    <section class="work__heading h-layout">
         <h1>{{ title }}</h1>
-        <h4>{{ text }}</h4>
-        <a href="{{ website }}"><span>view website</span></a>
+        <p>{{ text }}</p>
+        <a class="primary-button" href="{{ website }}">
+            <span>view application</span>
+            <i class="fas fa-arrow-right"></i>
+        </a>
+    </section>
+
+    <div class="work__img h-layout">
+        <img src="../../static/images/{{ img2 }}" alt="banner">
     </div>
-</section>
 
-<section class="work__challenge h-layout--small">
-    <span class="work__challenge__title">Challenge</span>
-    <p class="work__challenge__text">{{ challenge }}</p>
-</section>
+    <section class="work__challenge h-layout">
+        <span class="work__challenge__title">Challenge</span>
+        <p class="work__challenge__text">{{ challenge }}</p>
+    </section>
 
-<div class="work__img h-layout">
-    <img src="../../static/images/{{ img2 }}" alt="banner">
-</div>
+    <div class="work__img h-layout">
+        <img src="../../static/images/{{ img1 }}" alt="banner">
+    </div>
 
-<div class="work__img h-layout">
-    <img src="../../static/images/{{ img1 }}" alt="banner">
-</div>
-
-<div class="work__img h-layout">
-    <img src="../../static/images/{{ img3 }}" alt="banner">
+    <div class="work__img h-layout">
+        <img src="../../static/images/{{ img3 }}" alt="banner">
+    </div>
 </div>

@@ -140,7 +140,6 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            min-height: 8vh;
     
             .logo {
                 text-transform: uppercase;
@@ -157,7 +156,7 @@
                 flex-direction: row;
                 align-items: center;
                 transform: translateX(0);
-                background: none;
+                background: $royal-blue;
     
                 &-item {
                     display: block; 

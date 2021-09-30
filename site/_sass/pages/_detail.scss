@@ -1,0 +1,33 @@
+.work {
+    &__heading {
+        margin-top: -6rem;
+        margin-bottom: $margin-big;
+
+        height: 60vh;
+        width: 100%;
+        background: $grey;    
+        padding-top: $padding-big;
+        padding-bottom: $padding-big;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h1 {
+            margin-top: 6rem;
+            margin-bottom: $margin-base;
+        }
+
+        p {
+            color: $dark;
+            margin-top: 0;
+        }
+
+        .primary-button {
+            text-align: left;
+        }
+    }
+
+    &__img {
+        margin-bottom: $margin-big;
+    }
+}

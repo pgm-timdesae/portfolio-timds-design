@@ -843,7 +843,6 @@ footer .socials-footer a:hover i {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 8vh;
   }
   .menu nav .logo {
     text-transform: uppercase;
@@ -859,7 +858,7 @@ footer .socials-footer a:hover i {
     flex-direction: row;
     align-items: center;
     transform: translateX(0);
-    background: none;
+    background: #0000F9;
   }
   .menu nav .nav__list-item {
     display: block;
@@ -959,4 +958,30 @@ footer .socials-footer a:hover i {
     color: #171717;
     margin-top: 2rem;
   }
+}
+.work__heading {
+  margin-top: -6rem;
+  margin-bottom: 2rem;
+  height: 60vh;
+  width: 100%;
+  background: #EDEFF1;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.work__heading h1 {
+  margin-top: 6rem;
+  margin-bottom: 1rem;
+}
+.work__heading p {
+  color: #171717;
+  margin-top: 0;
+}
+.work__heading .primary-button {
+  text-align: left;
+}
+.work__img {
+  margin-bottom: 2rem;
 }
