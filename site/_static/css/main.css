@@ -728,7 +728,7 @@ footer .socials-footer a:hover i {
 }
 .menu {
   padding-left: 0;
-  background: #FFF;
+  background: rgba(255, 255, 255, 0.6);
   position: relative;
   z-index: 1;
 }
@@ -739,13 +739,14 @@ footer .socials-footer a:hover i {
   align-items: center;
   height: 5rem;
   z-index: 100;
+  padding-left: 0;
 }
 .menu nav .logo {
   padding-top: 1rem;
   padding-left: 1rem;
 }
 .menu nav .logo svg {
-  height: 5rem;
+  height: 4rem;
 }
 .menu nav .nav__list {
   display: none;
@@ -835,7 +836,7 @@ footer .socials-footer a:hover i {
 .menu nav .burger > div {
   width: 27px;
   height: 3px;
-  background-color: #FFF;
+  background-color: #171717;
   margin: 6px;
   transition: all 0.3s ease;
 }
@@ -979,6 +980,9 @@ footer .socials-footer a:hover i {
 }
 .workpage-2 {
   position: relative;
+}
+.workpage-2 .cards {
+  margin-top: 7rem;
 }
 .workpage-2 .cards li {
   width: 31%;

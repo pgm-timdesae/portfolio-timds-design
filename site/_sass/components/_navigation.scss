@@ -1,6 +1,6 @@
 .menu {
     padding-left: 0;
-    background: $white;
+    background: rgba($color: $white, $alpha: 0.6);
     position: relative;
     z-index: 1;
     
@@ -11,13 +11,14 @@
         align-items: center;
         height: 5rem;
         z-index: 100;
+        padding-left: 0;
 
         .logo {
             padding-top: 1rem;
             padding-left: 1rem;
 
             svg {
-                height: 5rem;
+                height: 4rem;
             }
         }
 
@@ -123,7 +124,7 @@
             > div {
                 width: 27px;
                 height: 3px;
-                background-color: $white;
+                background-color: $dark;
                 margin: 6px;
                 transition: all 0.3s ease;
             }
