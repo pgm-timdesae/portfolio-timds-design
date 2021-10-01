@@ -21,7 +21,8 @@ html {
 /* 
 Horizontal layout
 */
-.h-layout {
+.h-layout,
+.h-layout--small {
     width: 76rem;
     max-width: 100%;
     margin: 0 auto;
@@ -39,13 +40,16 @@ Horizontal layout
     }
 }
 
-.h-layout--small {
-    width: 50rem;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 0 1rem;
-    position: relative;
+@media (min-width: 48rem) {
+    .h-layout--small {
+        width: 60rem;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0 1rem;
+        position: relative;
+    }
 }
+
 
 /**
  * Basic styles for links

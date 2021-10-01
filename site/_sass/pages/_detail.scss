@@ -4,10 +4,7 @@
         margin-bottom: $margin-big;
 
         height: 60vh;
-        width: 100%;
         background: $grey;    
-        padding-top: $padding-big;
-        padding-bottom: $padding-big;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -23,11 +20,44 @@
         }
 
         .primary-button {
-            text-align: left;
+            display: block;
+            margin-right: auto;
+        }
+    }
+
+    &__intro {
+        &__title {
+            text-transform: uppercase;
+            font-weight: 400;
+            color: $dark;
+            opacity: 0.5;
+        }
+
+        &__text {
+            color: $dark;
+            margin-top: $margin-small;
+            margin-bottom: $margin-big;
         }
     }
 
     &__img {
         margin-bottom: $margin-big;
+    }
+}
+
+@media (min-width: 48rem) {
+    .work{
+        &__intro {
+            display: flex;
+            justify-content: space-between;
+
+            &__challenge {
+                width: 50%;
+            }
+
+            &__info {
+                width: 35%;
+            }
+        }
     }
 }
