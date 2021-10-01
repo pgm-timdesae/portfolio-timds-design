@@ -728,13 +728,16 @@ footer .socials-footer a:hover i {
 }
 .menu {
   padding-left: 0;
+  background: #FFF;
+  position: relative;
+  z-index: 1;
 }
 .menu nav {
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 6rem;
+  height: 5rem;
   z-index: 100;
 }
 .menu nav .logo {
@@ -841,6 +844,12 @@ footer .socials-footer a:hover i {
 }
 
 @media (min-width: 48rem) {
+  .menu {
+    padding-left: 0;
+    background: rgba(255, 255, 255, 0.6);
+    position: relative;
+    z-index: 1;
+  }
   .menu nav {
     display: flex;
     justify-content: space-between;
@@ -860,6 +869,7 @@ footer .socials-footer a:hover i {
     flex-direction: row;
     align-items: center;
     transform: translateX(0);
+    background: transparent;
   }
   .menu nav .nav__list-item {
     display: block;
@@ -868,7 +878,7 @@ footer .socials-footer a:hover i {
   }
   .menu nav .nav__list-item a {
     position: relative;
-    color: #FFF;
+    color: #171717;
     font-size: 1.3125rem;
     font-weight: 400;
     transition: 0.3s all ease-in;
@@ -876,8 +886,8 @@ footer .socials-footer a:hover i {
   .menu nav .nav__list-item a:after {
     content: "";
     position: absolute;
-    background-color: #FFF;
-    height: 3px;
+    background-color: #0000F9;
+    height: 2px;
     width: 0;
     left: 0;
     bottom: -10px;
@@ -888,6 +898,13 @@ footer .socials-footer a:hover i {
   }
   .menu nav .burger {
     display: none;
+  }
+
+  .menu--home {
+    padding-left: 0;
+    background: red;
+    position: relative;
+    z-index: 1;
   }
 }
 .toggle .line1 {
