@@ -27,7 +27,7 @@
 
       
       // Back to top
-      /* if (this.btnToTopElement !== null) {
+       if (this.btnToTopElement !== null) {
         this.btnToTopElement.addEventListener('click', (ev) => {
           window.scrollTo({
             top: 0,
@@ -35,7 +35,7 @@
             behavior: 'smooth',
           });
         });
-      } */
+      }
     },
   };
   app.initialize();

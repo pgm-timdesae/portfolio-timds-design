@@ -34,18 +34,17 @@
 }
 
 .btn {
-    &-to-top {
-        display: none;
-        
+    &-to-top {        
         position: fixed;
-        right: 1rem;
+        right: 0rem;
         bottom: 1rem;
 
-        padding: 0.5rem 1rem;
-        background: $white;
+        padding: 1rem 1rem;
+        background: $royal-blue;
 
-        border: 1px solid $dark;
-        border-radius: 10px;
+        i {
+            color: $white;
+        }
     }
 }
 
