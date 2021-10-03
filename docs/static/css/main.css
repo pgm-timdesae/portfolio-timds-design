@@ -1019,12 +1019,11 @@ footer .socials-footer a:hover i {
 }
 
 @media (min-width: 48rem) {
-  .workpage-2 {
-    position: relative;
+  .workpage-2 .cards li {
+    width: 50%;
   }
-  .workpage-2 .cards {
-    margin-top: 7rem;
-  }
+}
+@media (min-width: 64rem) {
   .workpage-2 .cards li {
     width: 31%;
   }

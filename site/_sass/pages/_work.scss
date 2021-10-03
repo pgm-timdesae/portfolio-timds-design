@@ -11,12 +11,18 @@
 } 
 
 @media (min-width: 48rem) {
-    .workpage-2 {
-        position: relative;
-    
-        .cards {
-            margin-top: $margin-large;
-    
+    .workpage-2 {    
+        .cards {    
+            li {
+                width: 50%;
+            }
+        }
+    } 
+}
+
+@media (min-width: 64rem) {
+    .workpage-2 {    
+        .cards {    
             li {
                 width: 31%;
             }
