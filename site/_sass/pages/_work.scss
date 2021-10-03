@@ -5,7 +5,21 @@
         margin-top: $margin-large;
 
         li {
-            width: 31%;
+            width: 100%;
         }
     }
 } 
+
+@media (min-width: 48rem) {
+    .workpage-2 {
+        position: relative;
+    
+        .cards {
+            margin-top: $margin-large;
+    
+            li {
+                width: 31%;
+            }
+        }
+    } 
+}

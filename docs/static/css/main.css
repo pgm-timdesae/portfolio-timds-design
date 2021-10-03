@@ -1015,9 +1015,20 @@ footer .socials-footer a:hover i {
   margin-top: 7rem;
 }
 .workpage-2 .cards li {
-  width: 31%;
+  width: 100%;
 }
 
+@media (min-width: 48rem) {
+  .workpage-2 {
+    position: relative;
+  }
+  .workpage-2 .cards {
+    margin-top: 7rem;
+  }
+  .workpage-2 .cards li {
+    width: 31%;
+  }
+}
 .work__heading {
   margin-top: -6rem;
   margin-bottom: 2rem;
