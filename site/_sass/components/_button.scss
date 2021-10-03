@@ -35,9 +35,9 @@
 
 .btn {
     &-to-top {        
-        position: fixed;
-        right: 0rem;
-        bottom: 1rem;
+        position: absolute;
+        top: -1.5rem;
+        right: 1rem;
 
         padding: 1rem 1rem;
         background: $royal-blue;

@@ -7,7 +7,7 @@ layout: layouts/base.njk
         <div class="h-layout--small">
             <h1>{{ title }}</h1>
             <p>{{ short }}</p>
-            <a class="primary-button" href="{{ website }}">
+            <a class="primary-button" href="{{ website }}" target="_blank">
                 <span>view application</span>
                 <i class="fas fa-arrow-right"></i>
             </a>  
@@ -35,10 +35,18 @@ layout: layouts/base.njk
 
             <div>
                 <span class="work__intro__title">Live website</span>
-                <a href="{{website}}">
+                <a href="{{website}}" target="_blank">
                     <p class="work__intro__text">{{ website }}</p>
                 </a>
             </div>
+
+            <div>
+                <span class="work__intro__title">Adobe XD file (online)</span>
+                <a href="{{xd}}" target="_blank">
+                    <p class="work__intro__text">{{ xd }}</p>
+                </a>
+            </div>
+
         </div>
     </section>
 
@@ -53,4 +61,10 @@ layout: layouts/base.njk
     <div class="work__img h-layout">
         <img src="../../static/images/{{ img3 }}" alt="banner">
     </div>
+
+    <div class="work__img h-layout">
+        <img src="../../static/images/{{ img4 }}" alt="banner">
+    </div>
 </div>
+
+{% include "components/cta-banner.njk" %}
