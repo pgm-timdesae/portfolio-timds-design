@@ -1,0 +1,45 @@
+.contact {
+    form {
+        label {
+            margin-top: $margin-base;
+        }
+
+        label, input, textarea {
+            text-transform: uppercase;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 0.25rem $padding-base;
+            border: 1px solid #999;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            margin-top: $margin-base;
+            width: auto;
+            transform: translateX(0);
+            transition: all 0.4s ease;
+
+            &:hover {
+                transform: translateX(10%);
+            }
+        }
+    }
+
+    @media(min-width: 48rem) {
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            > div {
+                flex-basis: 48%;
+            
+                &:nth-child(5) {
+                    flex-basis: 100%;
+                }
+            }
+        }
+    }
+}

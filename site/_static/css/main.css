@@ -1001,6 +1001,19 @@ footer .socials-footer a:hover i {
   margin-top: 3rem;
 }
 
+@media (min-width: 48rem) {
+  .aboutpage__flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .aboutpage__flex-text {
+    width: 40%;
+  }
+  .aboutpage__flex-image {
+    width: 40%;
+  }
+}
 .workpage-2 {
   position: relative;
 }
@@ -1021,6 +1034,41 @@ footer .socials-footer a:hover i {
     width: 31%;
   }
 }
+.contact form label {
+  margin-top: 1rem;
+}
+.contact form label, .contact form input, .contact form textarea {
+  text-transform: uppercase;
+}
+.contact form input, .contact form textarea {
+  width: 100%;
+  padding: 0.25rem 1rem;
+  border: 1px solid #999;
+  border-radius: 5px;
+}
+.contact form input[type=submit] {
+  margin-top: 1rem;
+  width: auto;
+  transform: translateX(0);
+  transition: all 0.4s ease;
+}
+.contact form input[type=submit]:hover {
+  transform: translateX(10%);
+}
+@media (min-width: 48rem) {
+  .contact form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .contact form > div {
+    flex-basis: 48%;
+  }
+  .contact form > div:nth-child(5) {
+    flex-basis: 100%;
+  }
+}
+
 .work__heading {
   margin-top: -6rem;
   margin-bottom: 2rem;
