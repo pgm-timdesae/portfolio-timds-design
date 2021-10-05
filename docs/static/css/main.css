@@ -976,20 +976,29 @@ footer .socials-footer a:hover i {
   }
 }
 .aboutpage__flex {
-  padding-top: 5rem;
+  padding-top: 1rem;
   padding-bottom: 5rem;
-}
-.aboutpage__flex-text {
-  font-size: 3rem;
 }
 .aboutpage__flex-text lottie-player {
   margin: 0 auto;
-  padding: 0;
+  width: 250px;
 }
 .aboutpage__flex-text p {
   text-align: center;
   color: #171717;
-  margin-bottom: 3rem;
+  margin-top: -1rem;
+  margin-bottom: 0rem;
+}
+.aboutpage__flex-text a {
+  font-size: 1rem;
+  margin-top: 2rem;
+}
+.aboutpage__flex-image img {
+  display: flex;
+  justify-content: space-around;
+  width: 80vw;
+  margin: 0 auto;
+  margin-top: 3rem;
 }
 
 .workpage-2 {

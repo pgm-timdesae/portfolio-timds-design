@@ -1,22 +1,37 @@
 .aboutpage {
     &__flex {
-        padding-top: $padding-large;
+        padding-top: $padding-base;
         padding-bottom: $padding-large;
 
         &-text {
-            font-size: 3rem;
 
             lottie-player {
                 margin: 0 auto;
-                padding: 0;
+                width: 250px;
             }
 
             p {
                 text-align: center;
                 color: $dark;
-                margin-bottom: $margin-bigger;
+                margin-top: -1rem;
+                margin-bottom: 0rem;
             }
 
+            a {
+                font-size: $font-size-normal;
+                margin-top: $margin-big;
+            }
+
+        }
+
+        &-image {
+            img {
+                display: flex;
+                justify-content: space-around;
+                width: 80vw;
+                margin: 0 auto;
+                margin-top: $margin-bigger;
+            }
         }
     }
 }
