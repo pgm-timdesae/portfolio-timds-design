@@ -469,7 +469,7 @@ h3 {
 p {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
-  font-size: 1.05rem;
+  font-size: 1rem;
   line-height: 1.65rem;
   font-weight: 400;
   margin-bottom: 1rem;
@@ -541,7 +541,7 @@ p {
   margin-bottom: 2rem;
 }
 .cards li .card__text h3 {
-  font-size: 1.05rem;
+  font-size: 1rem;
   color: #171717;
   opacity: 0.7;
 }
@@ -801,7 +801,7 @@ footer .socials-footer a:hover i {
 }
 .menu nav .open .socials-nav-item a {
   color: #FFF;
-  font-size: 1.05rem;
+  font-size: 1rem;
   font-weight: 400;
   transition: 0.4s all ease-in;
 }
@@ -975,8 +975,21 @@ footer .socials-footer a:hover i {
     left: 45%;
   }
 }
-.aboutpage__flex-lottie {
-  display: flex;
+.aboutpage__flex {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.aboutpage__flex-text {
+  font-size: 3rem;
+}
+.aboutpage__flex-text lottie-player {
+  margin: 0 auto;
+  padding: 0;
+}
+.aboutpage__flex-text p {
+  text-align: center;
+  color: #171717;
+  margin-bottom: 3rem;
 }
 
 .workpage-2 {
