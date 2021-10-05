@@ -1,33 +1,20 @@
 .banner-contact {
-    background: $dark;
+    background: $grey;
     padding-top: $padding-bigger;
     padding-bottom: $padding-bigger;
-    color: $white;
+    color: $dark;
 
     .banner__text {
         h2 {
-            color: $white;
+            color: $dark;
         }
 
         p {
-            color: $white;
+            color: $dark;
         }
     }
 
     .banner__link {
-        a {
-            color: $white;
-            font-size: $font-size-big;
-            transition: all 0.4s ease-in-out;
-
-            i {
-                color: $white;
-            }
-
-            &:hover {
-                margin-left: $margin-base;
-            }
-        }
     }
 }
 
@@ -44,15 +31,6 @@
             }
     
             .banner__link {
-                margin-left: $margin-big;
-
-                a {
-                    font-size: $font-size-biggest;
-
-                    i {
-                        font-size: $font-size-biggest;
-                    }
-                }        
             }
         }
     }

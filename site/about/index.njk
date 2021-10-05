@@ -8,5 +8,16 @@ eleventyNavigation:
 ---
 
 <section class="aboutpage h-layout">
-    <h1>This goes about me</h1>
+    <div class="aboutpage__flex">
+        <div class="aboutpage__flex-lottie">
+            <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_6twibhcy.json"  background="transparent"  speed="1"  style="width: 100px; height: 100px;"    autoplay></lottie-player>
+            <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_hi0usqe8.json"  background="transparent"  speed="1"  style="width: 100px; height: 100px;"    autoplay></lottie-player>
+            <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_6yrubv6k.json"  background="transparent"  speed="1"  style="width: 100px; height: 100px;"    autoplay></lottie-player>
+        </div>
+        <div class="aboutpage__flex-image">
+            <img src="../static/images/tim.jpeg" />     
+        </div>
+    </div>
 </section>
+
+{% include "components/cta-banner.njk" %}
