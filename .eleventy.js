@@ -11,6 +11,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ 'site/_static/images': 'static/images' });
   eleventyConfig.addPassthroughCopy({ 'site/_static/js': 'static/js' });
 
+  // Copy `img/favicon/` to `_site/`
+  //eleventyConfig.addPassthroughCopy({ "img/favicon": "/" });
+
   // Browsersync Overrides
   eleventyConfig.setBrowserSyncConfig({
     callbacks: {
