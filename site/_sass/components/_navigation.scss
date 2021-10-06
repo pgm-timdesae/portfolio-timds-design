@@ -196,7 +196,22 @@
                         &:hover:after {
                             width: 100%;
                         }
-                    } 
+                    }
+
+                    &--active {  
+                        a {    
+                            &:after {
+                                content: "";
+                                position: absolute;
+                                background-color: $royal-blue;
+                                height: 2px;
+                                width: 100%;
+                                left: 0;
+                                bottom: -10px;
+                                transition: 0.3s all ease-in;
+                            }
+                        }        
+                    }
                 }
             }
     

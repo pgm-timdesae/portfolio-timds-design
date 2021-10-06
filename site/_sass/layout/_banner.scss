@@ -3,10 +3,12 @@
     padding-top: $padding-bigger;
     padding-bottom: $padding-bigger;
     color: $dark;
+    text-align: center;
 
     .banner__text {
-        h2 {
+        h1 {
             color: $dark;
+            margin-bottom: $margin-base;
         }
 
         p {
@@ -20,18 +22,11 @@
 
 @media (min-width: 48rem) {
     .banner-contact {
-        padding-top: $padding-bigger;
-        padding-bottom: $padding-bigger;
+        padding-top: $padding-large;
+        padding-bottom: $padding-large;
     
         &-flex {
-            display: flex;
-    
-            .banner__text {
-                width: 50%;
-            }
-    
-            .banner__link {
-            }
+            //display: flex;
         }
     }
 }

@@ -441,7 +441,7 @@ body {
 h1 {
   font-family: "Syne", sans-serif;
   font-style: normal;
-  font-size: 2.1rem;
+  font-size: 2.5rem;
   line-height: 1.2;
   font-weight: 600;
   margin-bottom: 3rem;
@@ -587,23 +587,19 @@ p {
   padding-top: 3rem;
   padding-bottom: 3rem;
   color: #171717;
+  text-align: center;
 }
-.banner-contact .banner__text h2 {
+.banner-contact .banner__text h1 {
   color: #171717;
+  margin-bottom: 1rem;
 }
 .banner-contact .banner__text p {
   color: #171717;
 }
 @media (min-width: 48rem) {
   .banner-contact {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
-  .banner-contact-flex {
-    display: flex;
-  }
-  .banner-contact-flex .banner__text {
-    width: 50%;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
 }
 footer {
@@ -692,16 +688,23 @@ footer .socials-footer a:hover i {
   position: absolute;
   top: -1.5rem;
   right: 1rem;
-  padding: 1rem 1rem;
+  padding: 1.5rem;
   background: #0000F9;
+  transition: all 0.3s ease-in-out;
+  border-radius: 15px;
 }
 .btn-to-top i {
   color: #FFF;
+  font-size: 1.2rem;
+}
+.btn-to-top:hover {
+  background: rgba(0, 0, 249, 0.8);
+  margin-bottom: 1rem;
 }
 
 @media (min-width: 85rem) {
   .btn-to-top {
-    top: -4.5rem;
+    top: -4.9rem;
     display: block;
   }
 }
@@ -877,6 +880,16 @@ footer .socials-footer a:hover i {
   .menu nav .nav__list-item a:hover:after {
     width: 100%;
   }
+  .menu nav .nav__list-item--active a:after {
+    content: "";
+    position: absolute;
+    background-color: #0000F9;
+    height: 2px;
+    width: 100%;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s all ease-in;
+  }
   .menu nav .burger {
     display: none;
   }
@@ -915,6 +928,8 @@ footer .socials-footer a:hover i {
 /* Hero with my name */
 .hero {
   padding: 12rem 2rem;
+  height: 90vh;
+  width: 80vw;
 }
 .hero span {
   display: block;
@@ -947,7 +962,28 @@ footer .socials-footer a:hover i {
   }
 
   .hero {
-    width: 50%;
+    width: 60vw;
+  }
+  .hero .name {
+    font-size: 3rem;
+  }
+  .hero .name:nth-of-type(2) {
+    text-align: right;
+    color: #171717;
+  }
+  .hero .intro {
+    color: #171717;
+    margin-top: 2rem;
+  }
+}
+@media (min-width: 60rem) {
+  .bg-mesh {
+    height: 100vh;
+    background-position: right 50%;
+  }
+
+  .hero {
+    width: 40vw;
   }
   .hero .name {
     font-size: 3rem;

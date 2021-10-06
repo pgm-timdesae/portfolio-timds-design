@@ -14,7 +14,7 @@ module.exports = function (eleventyConfig) {
   // Copy `img/favicon/` to `_site/`
   //eleventyConfig.addPassthroughCopy({ "img/favicon": "/" });
 
-  // Browsersync Overrides
+  /* // Browsersync Overrides
   eleventyConfig.setBrowserSyncConfig({
     callbacks: {
       ready: function(err, browserSync) {
@@ -27,7 +27,7 @@ module.exports = function (eleventyConfig) {
         });
       }
     }
-  });
+  }); */
 
   // Filters
   eleventyConfig.addFilter('highlighted', function(works) {

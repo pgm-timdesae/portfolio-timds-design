@@ -13,6 +13,8 @@
 /* Hero with my name */
 .hero {
     padding: 12rem $padding-big;
+    height: 90vh;
+    width: 80vw;
 
     span {
         display: block;
@@ -49,8 +51,36 @@
     }
 
     .hero {
-        width: 50%;
+        width: 60vw;
+        
+        span {
+        }
     
+        .name {
+            font-size: 3rem;
+    
+            &:nth-of-type(2) {
+                text-align: right;
+                color: $dark;
+            }
+        }
+    
+        .intro {
+            color: $dark;
+            margin-top: $margin-big;
+        }
+    }
+}
+
+@media (min-width: 60rem) {
+    .bg-mesh {
+        height: 100vh;
+        background-position: right 50%;
+    }
+
+    .hero {
+        width: 40vw;
+        
         span {
         }
     
