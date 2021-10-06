@@ -637,7 +637,6 @@ footer .socials-footer a i {
 }
 footer .socials-footer a:hover {
   color: #0000F9;
-  margin-left: 1rem;
 }
 footer .socials-footer a:hover i {
   transform: rotate(0);
@@ -1100,6 +1099,13 @@ footer .socials-footer a:hover i {
   color: #171717;
   margin-top: 0.5rem;
   margin-bottom: 2rem;
+}
+.work__intro__link {
+  transition: all 0.3s ease;
+  color: #171717;
+}
+.work__intro__link:hover {
+  color: #0000F9;
 }
 .work__img {
   margin-bottom: 2rem;

@@ -26,6 +26,7 @@
     }
 
     &__intro {
+
         &__title {
             text-transform: uppercase;
             font-weight: 400;
@@ -37,6 +38,15 @@
             color: $dark;
             margin-top: $margin-small;
             margin-bottom: $margin-big;
+        }
+
+        &__link {
+            transition: all 0.3s ease;
+            color: $dark;
+            
+            &:hover {
+                color: $royal-blue;
+            }
         }
     }
 

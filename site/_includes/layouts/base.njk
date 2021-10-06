@@ -25,17 +25,5 @@
 
         <script src="{{ '/static/js/main.js' | url }}"></script>
         <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-        <script>
-            mapboxgl.accessToken = 'pk.eyJ1IjoicGdtLW5pY29sYXNjbnVkZGUiLCJhIjoiY2tsZ2x0Y2NxMWxmbzJ2bWozeDMwdWppeiJ9.sL4VU3mdOJq7aS1pb3nNrw';
-            var map = new mapboxgl.Map({
-                container: 'map', // container id
-                style: 'mapbox://styles/pgm-nicolascnudde/cknvhu9n11o5t17n47kwziije', // style URL
-                center: [3.6686911, 51.0873544], // starting position [lng, lat]
-                zoom: 15 // starting zoom
-            });
-
-            // disable map zoom when using scroll
-            map.scrollZoom.disable();
-        </script>
     </body>
 </html>
