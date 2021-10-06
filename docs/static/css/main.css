@@ -1033,37 +1033,56 @@ footer .socials-footer a:hover i {
     width: 31%;
   }
 }
-.contact form label {
-  margin-top: 1rem;
+.contact {
+  padding-top: 5rem;
+  padding-bottom: 3rem;
 }
-.contact form label, .contact form input, .contact form textarea {
+.contact__intro p {
+  color: #171717;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.contact__form label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: 400;
+}
+.contact__form label, .contact__form input, .contact__form textarea {
   text-transform: uppercase;
 }
-.contact form input, .contact form textarea {
+.contact__form input, .contact__form textarea {
   width: 100%;
   padding: 0.25rem 1rem;
-  border: 1px solid #999;
+  border: 1px solid #171717;
   border-radius: 5px;
+  margin-top: 0.5rem;
 }
-.contact form input[type=submit] {
+.contact__form input[type=submit] {
+  color: #FFF;
+  background-color: #0000F9;
+  border: none;
+  padding: 1rem 3rem;
   margin-top: 1rem;
   width: auto;
   transform: translateX(0);
   transition: all 0.4s ease;
 }
-.contact form input[type=submit]:hover {
+.contact__form input[type=submit]:hover {
   transform: translateX(10%);
 }
 @media (min-width: 48rem) {
-  .contact form {
+  .contact .contact__intro p {
+    width: 50%;
+  }
+  .contact .contact__form {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  .contact form > div {
+  .contact .contact__form > div {
     flex-basis: 48%;
   }
-  .contact form > div:nth-child(5) {
+  .contact .contact__form > div:nth-child(5) {
     flex-basis: 100%;
   }
 }

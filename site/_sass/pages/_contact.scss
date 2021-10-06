@@ -1,7 +1,20 @@
 .contact {
-    form {
+    padding-top: $padding-large;
+    padding-bottom: $padding-bigger;
+
+    &__intro {
+        p {
+            color: $dark;
+            width: 100%;
+            margin-bottom: $margin-big;
+        }
+    }
+
+    &__form {
         label {
+            display: block;
             margin-top: $margin-base;
+            font-weight: 400;
         }
 
         label, input, textarea {
@@ -11,11 +24,16 @@
         input, textarea {
             width: 100%;
             padding: 0.25rem $padding-base;
-            border: 1px solid #999;
+            border: 1px solid $dark;
             border-radius: 5px;
+            margin-top: $margin-small;
         }
 
         input[type="submit"] {
+            color: $white;
+            background-color: $royal-blue;
+            border: none;
+            padding: $padding-base $padding-bigger;
             margin-top: $margin-base;
             width: auto;
             transform: translateX(0);
@@ -28,18 +46,26 @@
     }
 
     @media(min-width: 48rem) {
-        form {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-
-            > div {
-                flex-basis: 48%;
-            
-                &:nth-child(5) {
-                    flex-basis: 100%;
+        .contact {
+            &__intro {
+                p {
+                    width: 50%;
                 }
             }
+
+            &__form {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+    
+                > div {
+                    flex-basis: 48%;
+                
+                    &:nth-child(5) {
+                        flex-basis: 100%;
+                    }
+                }
+            }        
         }
     }
 }
