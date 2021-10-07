@@ -37,11 +37,19 @@
         color: $dark;
         margin-top: $margin-big;
     }
+
+    .primary-button {
+        text-align: left;
+        span {
+            display: inline-block;
+        }
+    }
 }
 
 /* Work section */
 .work-on-home {
-    padding-bottom: $padding-large ;
+    padding-top: $padding-big;
+    padding-bottom: $padding-big;
 }
 
 @media (min-width: 48rem) {
@@ -68,6 +76,7 @@
         .intro {
             color: $dark;
             margin-top: $margin-big;
+            font-size: $font-size-big;
         }
     }
 }
@@ -79,13 +88,13 @@
     }
 
     .hero {
-        width: 40vw;
+        width: 50vw;
         
         span {
         }
     
         .name {
-            font-size: 3rem;
+            font-size: 4rem;
     
             &:nth-of-type(2) {
                 text-align: right;
@@ -96,6 +105,7 @@
         .intro {
             color: $dark;
             margin-top: $margin-big;
+            font-size: $font-size-big;
         }
     }
 }
@@ -105,11 +115,11 @@
     text-align: center;
     position: absolute;
     bottom: 4rem;
-    left: 40%;
+    left: 1rem;
  }
 
  @media (min-width: 48rem) {
 .arrow {
-    left: 45%;
+    left: 1rem;
  }
 }

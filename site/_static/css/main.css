@@ -538,15 +538,28 @@ p {
 .cards li {
   display: flex;
   justify-content: center;
-  margin-bottom: 2rem;
+  margin-bottom: 7rem;
+  background: #FFF;
+}
+.cards li .card {
+  position: relative;
+}
+.cards li .card i {
+  font-size: 1.3125rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 100;
+  transform: rotate(-45deg);
+  color: #0000F9;
 }
 .cards li .card__text h3 {
   font-size: 1rem;
   color: #171717;
   opacity: 0.7;
 }
-.cards li .card__img h4 {
-  color: #171717;
+.cards li .card__img {
+  overflow: hidden;
 }
 .cards li .card__img img {
   width: 100%;
@@ -555,7 +568,10 @@ p {
   transition: 0.3s ease-in-out all;
 }
 .cards li .card__img img:hover {
-  transform: scale(1.05);
+  transform: scale(1.1);
+}
+.cards li .card:hover i {
+  transform: rotate(0deg);
 }
 
 @media (min-width: 48rem) {
@@ -566,20 +582,6 @@ p {
   }
   .cards .card__img {
     position: relative;
-  }
-  .cards .card__img:after {
-    content: "";
-    position: absolute;
-    background-color: #0000F9;
-    height: 3px;
-    width: 0;
-    left: 0;
-    bottom: -10px;
-    transition: 0.3s all ease-in;
-  }
-  .cards .card__img:hover:after {
-    width: 100%;
-    transform: scale(1.05);
   }
 }
 .banner-contact {
@@ -949,10 +951,17 @@ footer .socials-footer a:hover i {
   color: #171717;
   margin-top: 2rem;
 }
+.hero .primary-button {
+  text-align: left;
+}
+.hero .primary-button span {
+  display: inline-block;
+}
 
 /* Work section */
 .work-on-home {
-  padding-bottom: 5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 @media (min-width: 48rem) {
@@ -974,6 +983,7 @@ footer .socials-footer a:hover i {
   .hero .intro {
     color: #171717;
     margin-top: 2rem;
+    font-size: 1.3125rem;
   }
 }
 @media (min-width: 60rem) {
@@ -983,10 +993,10 @@ footer .socials-footer a:hover i {
   }
 
   .hero {
-    width: 40vw;
+    width: 50vw;
   }
   .hero .name {
-    font-size: 3rem;
+    font-size: 4rem;
   }
   .hero .name:nth-of-type(2) {
     text-align: right;
@@ -995,6 +1005,7 @@ footer .socials-footer a:hover i {
   .hero .intro {
     color: #171717;
     margin-top: 2rem;
+    font-size: 1.3125rem;
   }
 }
 /* Bounce arrow */
@@ -1002,12 +1013,12 @@ footer .socials-footer a:hover i {
   text-align: center;
   position: absolute;
   bottom: 4rem;
-  left: 40%;
+  left: 1rem;
 }
 
 @media (min-width: 48rem) {
   .arrow {
-    left: 45%;
+    left: 1rem;
   }
 }
 .aboutpage__flex {
@@ -1062,11 +1073,6 @@ footer .socials-footer a:hover i {
 @media (min-width: 48rem) {
   .workpage-2 .cards li {
     width: 50%;
-  }
-}
-@media (min-width: 64rem) {
-  .workpage-2 .cards li {
-    width: 31%;
   }
 }
 .contact {

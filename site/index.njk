@@ -13,6 +13,10 @@ description: Welcome to the portfolio of designer & developer Tim De Saeger
    <span class="name">- Digital creative</span>
    <span class="name">& web developer</span>
    <p class="intro">I am an enthousiastic and talented graphic designer with a passion for web development.</p>
+   <a href="about" class="primary-button">
+        <span>Find out more</span>
+        <i class="fas fa-arrow-right"></i>
+   </a>
 </section>
 
 <div class="arrow bounce">
@@ -21,18 +25,21 @@ description: Welcome to the portfolio of designer & developer Tim De Saeger
     </a>
 </div>
 
-<section class="work-on-home h-layout" id="work">
-    <ul class="cards">
-        {% for work in collections.works | highlighted %}
-            {% include "components/work.njk" %}
-        {% endfor %}
-    </ul>
 
-    <a href="work" class="primary-button">
-        <span>Discover more work</span>
+<div class="work-on-home">
+    <section class="work-on-home h-layout" id="work">
+        <ul class="cards">
+            {% for work in collections.works | highlighted %}
+                {% include "components/work-card.njk" %}
+            {% endfor %}
+        </ul>
 
-        <i class="fas fa-arrow-right"></i>
-    </a>
-</section>
+        <a href="work" class="primary-button">
+            <span>Discover more work</span>
+
+            <i class="fas fa-arrow-right"></i>
+        </a>
+    </section>
+</div>
 
 {% include "components/cta-banner.njk" %}
