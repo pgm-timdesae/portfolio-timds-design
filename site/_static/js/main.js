@@ -29,10 +29,7 @@
       // Back to top
        if (this.btnToTopElement !== null) {
         this.btnToTopElement.addEventListener('click', (ev) => {
-          window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-          });
+          window.scrollTo({top: 0, behavior: 'smooth'});
         });
       }
     },

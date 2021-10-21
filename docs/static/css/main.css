@@ -431,6 +431,10 @@ strong {
 /**
  * Basic typography style for copy text
  */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
