@@ -2,11 +2,13 @@
 .hero {
   background-image: url(../images/test-hero.png);
   background-repeat: no-repeat;
-  background-size: contain;
-  height: 100vh;
+  background-size: cover;
+  background-position: 7% 75%;
+  height: 130vh;
+  margin-top: -5rem;
 
   .hero-content {
-      padding: 12rem $padding-big;
+      padding: 6rem $padding-big;
       height: 100vh;
       width: 80vw;
   
@@ -23,16 +25,18 @@
   
           &:nth-of-type(2) {
               text-align: right;
-              color: $dark;
+              color: $white;
           }
       }
   
       .intro {
+          display: none;
           color: $dark;
           margin-top: $margin-big;
       }
   
       .primary-button {
+          display: none;
           text-align: left;
           span {
               display: inline-block;
@@ -42,6 +46,10 @@
 }
 
 @media (min-width: 48rem) {
+  .hero {
+    height: 100vh;
+    background-position: 0% 75%;
+
     .hero-content {
         width: 60vw;
         
@@ -53,31 +61,41 @@
     
             &:nth-of-type(2) {
                 text-align: right;
-                color: $dark;
+                color: $white;
             }
         }
     
         .intro {
-            color: $dark;
+            color: $white;
             margin-top: $margin-big;
             font-size: $font-size-big;
         }
     }
+
+    .intro {
+      display: block;
+    }
+
+    .primary-button {
+        display: block;
+    }
+  }
 }
 
 @media (min-width: 60rem) {
+  .hero {
+    height: 100vh;
+    background-position: 0% 75%;
+
     .hero-content {
         width: 50vw;
-        
-        span {
-        }
-    
+            
         .name {
             font-size: 4rem;
     
             &:nth-of-type(2) {
                 text-align: right;
-                color: $dark;
+                color: $white;
             }
         }
     
@@ -87,6 +105,7 @@
             font-size: $font-size-big;
         }
     }
+  }
 }
 
 /* Work section */

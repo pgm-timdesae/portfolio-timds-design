@@ -420,8 +420,8 @@ strong {
 
 .fade-in-up {
   opacity: 0;
-  transform: translateY(5rem);
-  transition: all 0.5s ease;
+  transform: translateY(3rem);
+  transition: all 0.3s ease;
 }
 .fade-in-up.animated {
   opacity: 1;
@@ -734,13 +734,11 @@ footer .socials-footer a:hover i {
 }
 .menu {
   padding-left: 0;
-  background: rgba(255, 255, 255, 0.65);
   position: relative;
   z-index: 1;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .menu nav {
-  position: relative;
+  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -753,7 +751,7 @@ footer .socials-footer a:hover i {
   padding-left: 1rem;
 }
 .menu nav .logo svg {
-  height: 4rem;
+  height: 5rem;
 }
 .menu nav .nav__list {
   display: none;
@@ -854,7 +852,6 @@ footer .socials-footer a:hover i {
 @media (min-width: 48rem) {
   .menu {
     padding-left: 0;
-    background: rgba(255, 255, 255, 0.65);
     position: relative;
     z-index: 1;
   }
@@ -941,11 +938,13 @@ footer .socials-footer a:hover i {
 .hero {
   background-image: url(../images/test-hero.png);
   background-repeat: no-repeat;
-  background-size: contain;
-  height: 100vh;
+  background-size: cover;
+  background-position: 7% 75%;
+  height: 130vh;
+  margin-top: -5rem;
 }
 .hero .hero-content {
-  padding: 12rem 2rem;
+  padding: 6rem 2rem;
   height: 100vh;
   width: 80vw;
 }
@@ -961,13 +960,15 @@ footer .socials-footer a:hover i {
 }
 .hero .hero-content .name:nth-of-type(2) {
   text-align: right;
-  color: #1C1D20;
+  color: #FFF;
 }
 .hero .hero-content .intro {
+  display: none;
   color: #1C1D20;
   margin-top: 2rem;
 }
 .hero .hero-content .primary-button {
+  display: none;
   text-align: left;
 }
 .hero .hero-content .primary-button span {
@@ -975,34 +976,48 @@ footer .socials-footer a:hover i {
 }
 
 @media (min-width: 48rem) {
-  .hero-content {
+  .hero {
+    height: 100vh;
+    background-position: 0% 75%;
+  }
+  .hero .hero-content {
     width: 60vw;
   }
-  .hero-content .name {
+  .hero .hero-content .name {
     font-size: 3rem;
   }
-  .hero-content .name:nth-of-type(2) {
+  .hero .hero-content .name:nth-of-type(2) {
     text-align: right;
-    color: #1C1D20;
+    color: #FFF;
   }
-  .hero-content .intro {
-    color: #1C1D20;
+  .hero .hero-content .intro {
+    color: #FFF;
     margin-top: 2rem;
     font-size: 1.3125rem;
   }
+  .hero .intro {
+    display: block;
+  }
+  .hero .primary-button {
+    display: block;
+  }
 }
 @media (min-width: 60rem) {
-  .hero-content {
+  .hero {
+    height: 100vh;
+    background-position: 0% 75%;
+  }
+  .hero .hero-content {
     width: 50vw;
   }
-  .hero-content .name {
+  .hero .hero-content .name {
     font-size: 4rem;
   }
-  .hero-content .name:nth-of-type(2) {
+  .hero .hero-content .name:nth-of-type(2) {
     text-align: right;
-    color: #1C1D20;
+    color: #FFF;
   }
-  .hero-content .intro {
+  .hero .hero-content .intro {
     color: #1C1D20;
     margin-top: 2rem;
     font-size: 1.3125rem;

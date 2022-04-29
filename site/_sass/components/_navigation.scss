@@ -1,14 +1,14 @@
 .menu {
     padding-left: 0;
-    background: rgba($color: $white, $alpha: 0.65);
+    //background: rgba($color: $white, $alpha: 0.65);
     position: relative;
     z-index: 1;
     //box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     //box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    //box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     
     nav {
-        position: relative;
+        position: fixed;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -21,7 +21,7 @@
             padding-left: 1rem;
 
             svg {
-                height: 4rem;
+                height: 5rem;
             }
         }
 
@@ -144,7 +144,6 @@
 @media (min-width: 48rem) {
     .menu {
         padding-left: 0;
-        background: rgba($color: $white, $alpha: 0.65);
         position: relative;
         z-index: 1;
     
