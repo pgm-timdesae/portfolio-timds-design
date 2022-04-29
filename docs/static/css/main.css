@@ -866,7 +866,7 @@ footer .socials-footer a:hover i {
   }
   .menu nav .nav__list {
     position: relative;
-    width: 40%;
+    width: 70%;
     top: 0;
     height: 8vh;
     justify-content: space-between;
@@ -922,6 +922,11 @@ footer .socials-footer a:hover i {
     z-index: 1;
   }
 }
+@media (min-width: 60rem) {
+  .menu nav .nav__list {
+    width: 45%;
+  }
+}
 .toggle .line1 {
   transform: rotate(-45deg) translate(-6px, 6px);
 }
@@ -940,7 +945,6 @@ footer .socials-footer a:hover i {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 7% 75%;
-  background-attachment: fixed;
   height: 130vh;
   margin-top: -5rem;
 }
@@ -996,12 +1000,6 @@ footer .socials-footer a:hover i {
     margin-top: 2rem;
     font-size: 1.3125rem;
   }
-  .hero .intro {
-    display: block;
-  }
-  .hero .primary-button {
-    display: block;
-  }
 }
 @media (min-width: 60rem) {
   .hero {
@@ -1030,6 +1028,11 @@ footer .socials-footer a:hover i {
     display: block;
   }
 }
+@media (min-width: 110rem) {
+  .hero .hero-content {
+    padding-top: 15rem;
+  }
+}
 /* Work section */
 .work-on-home {
   padding-top: 2rem;
@@ -1041,14 +1044,14 @@ footer .socials-footer a:hover i {
   text-align: center;
   position: absolute;
   bottom: 1rem;
-  left: calc(50vw - 50px);
+  left: 0;
 }
-
 @media (min-width: 48rem) {
   .arrow {
-    left: 5rem;
+    left: 40%;
   }
 }
+
 .aboutpage__flex {
   padding-top: 1rem;
   padding-bottom: 5rem;

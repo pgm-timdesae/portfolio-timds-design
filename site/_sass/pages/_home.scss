@@ -4,7 +4,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 7% 75%;
-  background-attachment: fixed;
+  //background-attachment: fixed;
   height: 130vh;
   margin-top: -5rem;
 
@@ -72,14 +72,6 @@
             font-size: $font-size-big;
         }
     }
-
-    .intro {
-      display: block;
-    }
-
-    .primary-button {
-        display: block;
-    }
   }
 }
 
@@ -116,6 +108,14 @@
   }
 }
 
+@media (min-width: 110rem) {
+  .hero {
+    .hero-content {
+      padding-top: 15rem;
+    }
+  }
+}
+
 /* Work section */
 .work-on-home {
   padding-top: $padding-big;
@@ -124,14 +124,12 @@
 
 /* Bounce arrow */
 .arrow {
-    text-align: center;
-    position: absolute;
-    bottom: 1rem;
-    left: calc(50vw - 50px);
- }
+  text-align: center;
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
 
- @media (min-width: 48rem) {
-.arrow {
-  left: 5rem;
-  }
+  @media (min-width: 48rem) {
+  left: 40%;
+ }
 }
