@@ -2,11 +2,19 @@
     position: relative;
 
     .cards {
-        margin-top: $margin-large;
+      margin-top: $margin-large*2;
 
-        li {
-            width: 100%;
-        }
+      li {
+          width: 100%;
+
+          &:nth-last-of-type(even) {
+            margin-top: 5rem;
+          }
+
+          &:nth-last-of-type(odd) {
+            margin-top: -10rem;
+          }
+      }
     }
 } 
 

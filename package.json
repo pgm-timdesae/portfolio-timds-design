@@ -1,7 +1,7 @@
 {
   "name": "portfolio-timds-design",
   "version": "1.0.0",
-  "description": "My portfolio website 2021, made with 11ty",
+  "description": "My portfolio website 2022, made with 11ty",
   "main": "index.js",
   "scripts": {
     "sass": "sass --no-source-map site/_sass/main.scss site/_static/css/main.css",
