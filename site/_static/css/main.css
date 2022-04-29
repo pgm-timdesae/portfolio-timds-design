@@ -361,7 +361,7 @@ Horizontal layout
 */
 .h-layout,
 .h-layout--small {
-  width: 76rem;
+  width: 80rem;
   max-width: 100%;
   margin: 0 auto;
   padding: 0 1.5rem;
@@ -370,7 +370,7 @@ Horizontal layout
 
 @media (min-width: 48rem) {
   .h-layout {
-    width: 76rem;
+    width: 80rem;
     max-width: 100%;
     margin: 0 auto;
     padding: 0 1rem;
@@ -547,15 +547,32 @@ p {
 }
 .cards li .card {
   position: relative;
+  /* i {
+    display: none;
+    font-size: $font-size-big;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 100;
+    transform: rotate(-45deg);
+    color: $royal-blue;
+    border: 1px solid $royal-blue;
+    border-radius: 50%;
+    padding: $padding-big;
+  } */
 }
-.cards li .card i {
+.cards li .card .view {
+  display: none;
   font-size: 1.3125rem;
   position: absolute;
   top: 1rem;
   right: 1rem;
   z-index: 100;
-  transform: rotate(-45deg);
-  color: #0000F9;
+  border: 1px solid #0000F9;
+  border-radius: 50%;
+  padding: 2rem;
+  background: #0000F9;
+  color: #FFF;
 }
 .cards li .card__text h2 {
   margin-bottom: 2rem;
@@ -588,11 +605,17 @@ p {
 .cards li .card__img img:hover {
   transform: scale(1.1);
 }
+.cards li .card:hover {
+  /* i {
+    display: block;
+    transform: rotate(0deg);
+  } */
+}
 .cards li .card:hover h2 {
   color: #0000F9;
 }
-.cards li .card:hover i {
-  transform: rotate(0deg);
+.cards li .card:hover .view {
+  display: block;
 }
 
 @media (min-width: 48rem) {
@@ -1049,6 +1072,26 @@ footer .socials-footer a:hover i {
 @media (min-width: 48rem) {
   .arrow {
     left: 40%;
+  }
+}
+
+/* Intro text */
+.intro-about {
+  margin-top: 7rem;
+  margin-bottom: 1rem;
+}
+.intro-about p {
+  font-size: 1.75rem;
+  line-height: 1.5;
+  color: #1C1D20;
+  width: 80%;
+}
+.intro-about .primary-button {
+  text-align: left;
+}
+@media (min-width: 48rem) {
+  .intro-about p {
+    width: 70%;
   }
 }
 

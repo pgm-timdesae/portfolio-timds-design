@@ -133,3 +133,26 @@
   left: 40%;
  }
 }
+
+/* Intro text */
+.intro-about {
+  margin-top: $margin-large;
+  margin-bottom: $margin-base;
+
+  p {
+    font-size: $font-size-bigger;
+    line-height: 1.5;
+    color: $dark;
+    width: 80%;
+  }
+
+  .primary-button {
+    text-align: left;
+  }
+
+  @media (min-width: 48rem) {  
+    p {
+      width: 70%;
+    }
+  }
+}

@@ -8,14 +8,32 @@
         .card {
             position: relative;
 
-            i {
-                font-size: $font-size-big;
-                position: absolute;
-                top: 1rem;
-                right: 1rem;
-                z-index: 100;
-                transform: rotate(-45deg);
-                color: $royal-blue;
+            /* i {
+              display: none;
+              font-size: $font-size-big;
+              position: absolute;
+              top: 1rem;
+              right: 1rem;
+              z-index: 100;
+              transform: rotate(-45deg);
+              color: $royal-blue;
+              border: 1px solid $royal-blue;
+              border-radius: 50%;
+              padding: $padding-big;
+            } */
+
+            .view {
+              display: none;
+              font-size: $font-size-big;
+              position: absolute;
+              top: 1rem;
+              right: 1rem;
+              z-index: 100;
+              border: 1px solid $royal-blue;
+              border-radius: 50%;
+              padding: $padding-big;
+              background: $royal-blue;
+              color: $white;
             }
 
             &__text {
@@ -62,8 +80,13 @@
                 color: $royal-blue;
               }
 
-              i {
-                  transform: rotate(0deg);
+              /* i {
+                display: block;
+                transform: rotate(0deg);
+              } */
+
+              .view {
+                display: block;
               }
             }
         }
