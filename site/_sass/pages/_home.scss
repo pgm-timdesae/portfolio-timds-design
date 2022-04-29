@@ -4,6 +4,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 7% 75%;
+  background-attachment: fixed;
   height: 130vh;
   margin-top: -5rem;
 
@@ -88,22 +89,29 @@
     background-position: 0% 75%;
 
     .hero-content {
-        width: 50vw;
-            
-        .name {
-            font-size: 4rem;
-    
-            &:nth-of-type(2) {
-                text-align: right;
-                color: $white;
-            }
-        }
-    
-        .intro {
-            color: $dark;
-            margin-top: $margin-big;
-            font-size: $font-size-big;
-        }
+      width: 50%;
+      padding-top: 10rem;
+      margin-left: 40%;
+          
+      .name {
+          font-size: 4rem;
+  
+          &:nth-of-type(2) {
+              text-align: right;
+              color: $white;
+          }
+      }
+  
+      .intro {
+        display: block;
+        color: $dark;
+        margin-top: $margin-big;
+        font-size: $font-size-big;
+      }
+
+      .primary-button {
+        display: block;
+      }
     }
   }
 }
