@@ -20,6 +20,27 @@
     }
 }
 
+.secondary-button {
+  display: block;
+  text-align: center;
+  border: 1px solid $dark;
+  border-radius: $border-radius-large;
+  padding: $padding-base;
+  transition: all 0.4s ease;
+
+  span {
+    font-size: $font-size-normal;
+    color: $dark;
+    transition: all 0.4s ease;
+    margin-top: $margin-base;
+  }
+  
+  &:hover {
+    background-color: $royal-blue;
+  }
+}
+
+
 .primary-button:hover,
 .primary-button:focus {
     span {
@@ -31,6 +52,16 @@
         color: $royal-blue;
         transform: rotate(0deg);
     }
+}
+
+.secondary-button:hover,
+.secondary-button:focus {
+  background-color: $royal-blue;
+  border: 1px solid $royal-blue;
+
+  span {
+      color: $white;
+  }
 }
 
 .btn {
@@ -58,9 +89,9 @@
 
 @media(min-width: 85rem) {
     .btn {
-        &-to-top {
-            top: -4.9rem;
-            display: block;
-        }
+      &-to-top {
+          top: -4.9rem;
+          display: block;
+      }
     }
 }

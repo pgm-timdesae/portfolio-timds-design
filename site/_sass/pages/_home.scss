@@ -20,7 +20,7 @@
   
       .name {
           font-family: 'Syne', sans-serif;
-          font-size: 2.2rem;
+          font-size: 1.8rem;
           font-weight: 500;
           color: $royal-blue;
   
@@ -32,7 +32,7 @@
   
       .intro {
           display: none;
-          color: $dark;
+          color: $white;
           margin-top: $margin-big;
       }
   
@@ -67,9 +67,9 @@
         }
     
         .intro {
-            color: $white;
-            margin-top: $margin-big;
-            font-size: $font-size-big;
+          color: $white;
+          margin-top: $margin-big;
+          font-size: $font-size-big;
         }
     }
   }
@@ -96,7 +96,7 @@
   
       .intro {
         display: block;
-        color: $dark;
+        color: $white;
         margin-top: $margin-big;
         font-size: $font-size-big;
       }

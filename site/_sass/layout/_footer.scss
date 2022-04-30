@@ -1,11 +1,11 @@
 footer {
     padding-bottom: 2rem ;
-    color: $white;
-    background-color: $dark;
+    color: $dark;
+    background-color: $white;
     text-align: center;
 
     a, p {
-        color: $white;
+        color: $dark;
         font-weight: 300;
         margin-top: 0;
         margin-bottom: $margin-base;
@@ -21,7 +21,7 @@ footer {
         margin-bottom: $margin-big;
 
         a:hover {
-            color: $grey;
+            color: $dark;
         }
     }
 
@@ -37,7 +37,7 @@ footer {
             }
 
             &:hover {
-                color: $white;
+                color: $royal-blue;
 
                 i {
                     transform: rotate(0);
