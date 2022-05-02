@@ -40,6 +40,22 @@
   }
 }
 
+.case-btn {
+  display: block;
+  text-align: center;
+  background-color: $royal-blue;  
+  border-radius: $border-radius-large;
+  padding: $padding-base;
+  transition: all 0.4s ease;
+  width: 15rem;
+
+  span {
+    font-size: $font-size-normal;
+    color: $white;
+    transition: all 0.4s ease;
+    margin-top: $margin-base;
+  }
+}
 
 .primary-button:hover,
 .primary-button:focus {

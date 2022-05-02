@@ -31,20 +31,16 @@ description: Welcome to the portfolio of designer & developer Tim De Saeger
 </div>
 
 
-<div class="work-on-home">
-    <section class="work-on-home h-layout" id="work">
-        <ul class="cards">
-            {% for work in collections.works | highlighted %}
-                {% include "components/work-card.njk" %}
-            {% endfor %}
-        </ul>
+<section class="h-layout work" id="work">
+    {% for work in collections.works | highlighted %}
+        {% include "components/work-card.njk" %}
+    {% endfor %}
 
-        <a href="work" class="primary-button">
-            <span>Discover more work</span>
+    <a href="work" class="primary-button">
+        <span>Discover more work</span>
 
-            <i class="fas fa-arrow-right"></i>
-        </a>
-    </section>
-</div>
+        <i class="fas fa-arrow-right"></i>
+    </a>
+</section>
 
 {% include "components/cta-banner.njk" %}

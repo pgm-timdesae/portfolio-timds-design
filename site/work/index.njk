@@ -7,23 +7,20 @@ eleventyNavigation:
   order: 2
 ---
 
-<section class="workpage-2 h-layout">
-    <ul class="cards">
-        {% for work in collections.works %}
-            <li>
-                <a class="card" href="/portfolio-timds-design{{ work.url }}">
-                    <div class="card__img">
-                        <img src="../static/images/{{ work.data.thumb }}" alt="thumbnail">
-                    </div>
-                    
-                    <div class="card__text">
-                        <h2>{{ work.data.title }}</h2>
-                        <h3>{{ work.data.type }}</h3>
-                    </div>
-                </a>
-            </li>
-        {% endfor %}
-    </ul>
+<section class="work h-layout">
+  {% for work in collections.works %}
+    <article class="case">
+      <img class="case__thumbnail" src="../static/images/{{ work.data.thumb }}" alt="thumbnail">
+      <div class="case__backdrop"></div>
+      <div class="case__content">
+        <h2>{{ work.data.title }}</h2>
+        <h3>{{ work.data.type }}</h3>
+        <a href="/portfolio-timds-design{{ work.url }}" class="case-btn">
+          <span>Discover this case</span>
+        </a>
+      </div>
+    </article>
+  {% endfor %}
 </section>
 
 {% include "components/cta-banner.njk" %}

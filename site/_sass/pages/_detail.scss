@@ -26,6 +26,9 @@
     }
 
     &__intro {
+      margin-top: $margin-bigger;
+      margin-bottom: $margin-bigger;
+
 
         &__title {
             text-transform: uppercase;
@@ -51,7 +54,8 @@
     }
 
     &__img {
-        margin-bottom: $margin-big;
+      margin-bottom: $margin-bigger;
+      width: 70%;
     }
 }
 
