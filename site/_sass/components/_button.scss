@@ -57,6 +57,42 @@
   }
 }
 
+.test-btn {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: $royal-blue;
+  outline: 2px solid $royal-blue;
+  padding: $padding-base $padding-base*2;
+  border-radius: 100px;
+  position: relative;
+  overflow: hidden;
+  transition: color 1s;
+
+  &:hover {
+    color: $white;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: $royal-blue;
+    border-radius: 100px;
+    //transform: skewX(35deg);
+    z-index: -2;
+    transition: width 1s;
+  }
+
+  &:hover::before {
+      width: 100%;
+    }
+}
+
 .primary-button:hover,
 .primary-button:focus {
     span {

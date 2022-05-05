@@ -92,6 +92,11 @@
 .work {
   padding-top: $margin-bigger;
   padding-bottom: $margin-large;
+
+  .test-btn {
+    margin-top: $margin-big;
+    margin-left: 2.5%;
+  }
 }
 
 .case {
@@ -101,14 +106,17 @@
   margin: 0 auto;
   margin-top: $margin-bigger;
   transition: 0.3s ease-in-out all;
+  overflow: hidden;
 
   &__thumbnail {
-    height: 30rem;
+    //height: 30rem;
+    height: 100%;
     width: 100%;
     object-fit: cover;
     z-index: 1;
     position: relative;
     overflow: hidden;
+    transition: transform 0.75s;
   }
 
   &__backdrop::after {
@@ -150,5 +158,9 @@
       margin: 0 auto;
       margin-top: 6.5rem;
     }
+  }
+
+  &:hover .case__thumbnail {
+    transform: scale(1.15);
   }
 }

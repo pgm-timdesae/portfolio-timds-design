@@ -633,6 +633,10 @@ p {
   padding-top: 3rem;
   padding-bottom: 7rem;
 }
+.work .test-btn {
+  margin-top: 2rem;
+  margin-left: 2.5%;
+}
 
 .case {
   position: relative;
@@ -641,14 +645,16 @@ p {
   margin: 0 auto;
   margin-top: 3rem;
   transition: 0.3s ease-in-out all;
+  overflow: hidden;
 }
 .case__thumbnail {
-  height: 30rem;
+  height: 100%;
   width: 100%;
   object-fit: cover;
   z-index: 1;
   position: relative;
   overflow: hidden;
+  transition: transform 0.75s;
 }
 .case__backdrop::after {
   content: "";
@@ -682,6 +688,9 @@ p {
   display: block;
   margin: 0 auto;
   margin-top: 6.5rem;
+}
+.case:hover .case__thumbnail {
+  transform: scale(1.15);
 }
 
 .banner-contact {
@@ -808,6 +817,38 @@ footer .socials-footer a:hover i {
   color: #FFF;
   transition: all 0.4s ease;
   margin-top: 1rem;
+}
+
+.test-btn {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #0000F9;
+  outline: 2px solid #0000F9;
+  padding: 1rem 2rem;
+  border-radius: 100px;
+  position: relative;
+  overflow: hidden;
+  transition: color 1s;
+}
+.test-btn:hover {
+  color: #FFF;
+}
+.test-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #0000F9;
+  border-radius: 100px;
+  z-index: -2;
+  transition: width 1s;
+}
+.test-btn:hover::before {
+  width: 100%;
 }
 
 .primary-button:hover span,
@@ -1068,6 +1109,7 @@ footer .socials-footer a:hover i {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 7% 75%;
+  background-attachment: fixed;
   height: 130vh;
   margin-top: -5rem;
 }
