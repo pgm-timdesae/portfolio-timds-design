@@ -354,7 +354,7 @@ template {
 }
 
 html {
-  background: #FFF;
+  background: #f0f0f0;
 }
 
 /* 
@@ -440,7 +440,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
   font-style: normal;
-  color: #1C1D20;
+  color: #141414;
 }
 
 h1 {
@@ -540,6 +540,11 @@ p {
   width: 1px;
 }
 
+/* header {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+} */
 /* .cards {
     li {
         display: flex;
@@ -694,18 +699,18 @@ p {
 }
 
 .banner-contact {
-  background: #E9EAEB;
+  background: #141414;
   padding-top: 5rem;
-  padding-bottom: 3rem;
+  padding-bottom: 5rem;
   color: #FFF;
   text-align: center;
 }
 .banner-contact .banner__text h1 {
-  color: #1C1D20;
+  color: #FFF;
   margin-bottom: 1rem;
 }
 .banner-contact .banner__text p {
-  color: #1C1D20;
+  color: #FFF;
 }
 @media (min-width: 48rem) {
   .banner-contact {
@@ -715,24 +720,33 @@ p {
 }
 footer {
   padding-bottom: 2rem;
-  color: #1C1D20;
+  color: #141414;
   background-color: #FFF;
   text-align: center;
 }
 footer a, footer p {
-  color: #1C1D20;
+  color: #141414;
   font-weight: 300;
   margin-top: 0;
   margin-bottom: 1rem;
+}
+footer .logo-footer {
+  padding-top: 2rem;
 }
 footer .logo-footer svg {
   width: 10rem;
 }
 footer .get-in-touch {
+  padding-top: 2rem;
   margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
 }
 footer .get-in-touch a:hover {
-  color: #1C1D20;
+  color: #141414;
+}
+footer .socials-footer {
+  padding-top: 2rem;
 }
 footer .socials-footer a {
   display: inline-block;
@@ -752,13 +766,13 @@ footer .socials-footer a:hover i {
 
 @media (min-width: 48rem) {
   .footer {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
   .footer__flex {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
   }
   .footer__flex .get-in-touch {
@@ -774,12 +788,12 @@ footer .socials-footer a:hover i {
 }
 .primary-button span {
   font-size: 1.3125rem;
-  color: #1C1D20;
+  color: #141414;
   transition: all 0.4s ease;
   margin-top: 1rem;
 }
 .primary-button i {
-  color: #1C1D20;
+  color: #141414;
   margin-left: 1rem;
   font-size: 1.3125rem;
   transform: rotate(-45deg);
@@ -788,14 +802,14 @@ footer .socials-footer a:hover i {
 .secondary-button {
   display: block;
   text-align: center;
-  border: 1px solid #1C1D20;
+  border: 1px solid #141414;
   border-radius: 2rem;
   padding: 1rem;
   transition: all 0.4s ease;
 }
 .secondary-button span {
   font-size: 1rem;
-  color: #1C1D20;
+  color: #141414;
   transition: all 0.4s ease;
   margin-top: 1rem;
 }
@@ -851,6 +865,26 @@ footer .socials-footer a:hover i {
   width: 100%;
 }
 
+.inverted-primary-button {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+.inverted-primary-button span {
+  font-size: 1.3125rem;
+  color: #FFF;
+  transition: all 0.4s ease;
+  margin-top: 1rem;
+}
+.inverted-primary-button i {
+  color: #FFF;
+  margin-left: 1rem;
+  font-size: 1.3125rem;
+  transform: rotate(-45deg);
+}
+
+/* HOVERS */
 .primary-button:hover span,
 .primary-button:focus span {
   color: #0000F9;
@@ -859,6 +893,17 @@ footer .socials-footer a:hover i {
 .primary-button:hover i,
 .primary-button:focus i {
   color: #0000F9;
+  transform: rotate(0deg);
+}
+
+.inverted-primary-button:hover span,
+.inverted-primary-button:focus span {
+  color: #FFF;
+  margin-left: 1rem;
+}
+.inverted-primary-button:hover i,
+.inverted-primary-button:focus i {
+  color: #FFF;
   transform: rotate(0deg);
 }
 
@@ -874,25 +919,28 @@ footer .socials-footer a:hover i {
 
 .btn-to-top {
   position: absolute;
-  top: -1.5rem;
+  top: 1rem;
   right: 1rem;
   padding: 1.5rem;
-  background: #0000F9;
   transition: all 0.3s ease-in-out;
-  border-radius: 15px;
+  border-radius: 100px;
+  outline: 2px solid #0000F9;
 }
 .btn-to-top i {
-  color: #FFF;
+  color: #0000F9;
   font-size: 1.2rem;
 }
 .btn-to-top:hover {
-  background: rgba(0, 0, 249, 0.8);
+  background: #0000F9;
   margin-bottom: 1rem;
+}
+.btn-to-top:hover i {
+  color: #FFF;
 }
 
 @media (min-width: 85rem) {
   .btn-to-top {
-    top: -4.9rem;
+    top: -2rem;
     display: block;
   }
 }
@@ -909,10 +957,11 @@ footer .socials-footer a:hover i {
   height: 5rem;
   z-index: 100;
   padding-left: 0;
+  height: 100;
 }
 .menu nav .logo {
   padding-top: 1rem;
-  padding-left: 1rem;
+  padding-left: 3rem;
 }
 .menu nav .logo svg {
   height: 5rem;
@@ -929,14 +978,14 @@ footer .socials-footer a:hover i {
   transition: transform 0.4s ease-in-out;
   margin: 0;
   padding: 3rem;
-  background-color: #0000F9;
+  background-color: #f0f0f0;
 }
 .menu nav .nav__list-item {
   display: none;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 .menu nav .nav__list-item a {
-  color: #1C1D20;
+  color: #0000F9;
 }
 .menu nav .socials-nav {
   display: none;
@@ -958,24 +1007,26 @@ footer .socials-footer a:hover i {
 }
 .menu nav .open .nav__list {
   display: block;
-  background-color: #1C1D20;
+  background-color: #f0f0f0;
 }
 .menu nav .open .nav__list-item {
   display: block;
+  text-align: center;
 }
 .menu nav .open .nav__list-item a {
   position: relative;
-  color: #FFF;
+  color: #0000F9;
+  text-transform: uppercase;
   font-size: 2.1rem;
-  font-weight: 500;
+  font-weight: 400;
   opacity: 1;
   transition: 0.4s all ease-in;
 }
 .menu nav .open .nav__list-item a:after {
   content: "";
   position: absolute;
-  background-color: #FFF;
-  height: 3px;
+  background-color: #141414;
+  height: 1px;
   width: 0;
   left: 0;
   bottom: -10px;
@@ -988,7 +1039,7 @@ footer .socials-footer a:hover i {
   display: block;
 }
 .menu nav .open .socials-nav-item a {
-  color: #FFF;
+  color: #141414;
   font-size: 1rem;
   font-weight: 400;
   transition: 0.4s all ease-in;
@@ -1005,12 +1056,12 @@ footer .socials-footer a:hover i {
 .menu nav .burger > div {
   width: 27px;
   height: 3px;
-  background-color: #1C1D20;
+  background-color: #141414;
   margin: 6px;
   transition: all 0.3s ease;
 }
 .menu nav .burger.toggle > div {
-  background-color: #FFF;
+  background-color: #141414;
 }
 
 @media (min-width: 48rem) {
@@ -1047,7 +1098,7 @@ footer .socials-footer a:hover i {
   }
   .menu nav .nav__list-item a {
     position: relative;
-    color: #1C1D20;
+    color: #141414;
     font-size: 1.3125rem;
     font-weight: 400;
     transition: 0.3s all ease-in;
@@ -1221,11 +1272,12 @@ footer .socials-footer a:hover i {
 .intro-about {
   margin-top: 7rem;
   margin-bottom: 1rem;
+  padding-left: 10%;
 }
 .intro-about p {
   font-size: 1.75rem;
   line-height: 1.5;
-  color: #1C1D20;
+  color: #141414;
   width: 80%;
 }
 .intro-about .primary-button {
@@ -1247,7 +1299,7 @@ footer .socials-footer a:hover i {
 }
 .aboutpage__flex-text p {
   text-align: center;
-  color: #1C1D20;
+  color: #141414;
   margin-top: -1rem;
   margin-bottom: 0rem;
 }
@@ -1276,41 +1328,19 @@ footer .socials-footer a:hover i {
     width: 40%;
   }
 }
-/* .workpage-2 {
-    position: relative;
+.workpage .page-title {
+  font-size: 5rem;
+  width: 100%;
+  text-align: center;
+  margin-top: 3rem;
+}
 
-    .cards {
-      margin-top: $margin-large*2;
-
-      li {
-          width: 100%;
-
-          &:nth-last-of-type(even) {
-            margin-top: 5rem;
-          }
-
-          &:nth-last-of-type(odd) {
-            margin-top: -10rem;
-          }
-      }
-    }
-} 
-
-@media (min-width: 48rem) {
-    .workpage-2 {    
-        .cards {    
-            li {
-                width: 50%;
-            }
-        }
-    } 
-} */
 .contact {
   padding-top: 5rem;
   padding-bottom: 3rem;
 }
 .contact__intro p {
-  color: #1C1D20;
+  color: #141414;
   width: 100%;
   margin-bottom: 2rem;
 }
@@ -1325,7 +1355,7 @@ footer .socials-footer a:hover i {
 .contact__form input, .contact__form textarea {
   width: 100%;
   padding: 0.25rem 1rem;
-  border: 1px solid #1C1D20;
+  border: 1px solid #141414;
   border-radius: 5px;
   margin-top: 0.5rem;
 }
@@ -1373,7 +1403,7 @@ footer .socials-footer a:hover i {
   margin-bottom: 1rem;
 }
 .work__heading p {
-  color: #1C1D20;
+  color: #141414;
   margin-top: 0;
 }
 .work__heading .primary-button {
@@ -1387,17 +1417,17 @@ footer .socials-footer a:hover i {
 .work__intro__title {
   text-transform: uppercase;
   font-weight: 400;
-  color: #1C1D20;
+  color: #141414;
   opacity: 0.5;
 }
 .work__intro__text {
-  color: #1C1D20;
+  color: #141414;
   margin-top: 0.5rem;
   margin-bottom: 2rem;
 }
 .work__intro__link {
   transition: all 0.3s ease;
-  color: #1C1D20;
+  color: #141414;
 }
 .work__intro__link:hover {
   color: #0000F9;

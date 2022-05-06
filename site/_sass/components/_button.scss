@@ -93,6 +93,28 @@
     }
 }
 
+.inverted-primary-button {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: $margin-bigger;
+
+  span {
+      font-size: $font-size-big;
+      color: $white;
+      transition: all 0.4s ease;
+      margin-top: $margin-base;
+  }
+
+  i {
+      color: $white;
+      margin-left: $margin-base;
+      font-size: $font-size-big;
+      transform: rotate(-45deg);
+  }
+}
+
+/* HOVERS */
 .primary-button:hover,
 .primary-button:focus {
     span {
@@ -102,6 +124,19 @@
 
     i {
         color: $royal-blue;
+        transform: rotate(0deg);
+    }
+}
+
+.inverted-primary-button:hover,
+.inverted-primary-button:focus {
+    span {
+        color: $white;
+        margin-left: $margin-base;
+    }
+
+    i {
+        color: $white;
         transform: rotate(0deg);
     }
 }
@@ -119,22 +154,27 @@
 .btn {
     &-to-top {        
         position: absolute;
-        top: -1.5rem;
+        top: 1rem;
         right: 1rem;
 
         padding: 1.5rem;
-        background: $royal-blue;
+        //background: $dark;
         transition: all 0.3s ease-in-out;
-        border-radius: 15px;
+        border-radius: 100px;
+        outline: 2px solid $royal-blue;
 
         i {
-            color: $white;
+            color: $royal-blue;
             font-size: 1.2rem;
         }
 
         &:hover {
-            background: rgba($color: $royal-blue, $alpha: 0.8);
+            background: $royal-blue;
             margin-bottom: $margin-base;
+
+            i {
+              color: $white;
+            }
         }
     } 
 }
@@ -142,8 +182,8 @@
 @media(min-width: 85rem) {
     .btn {
       &-to-top {
-          top: -4.9rem;
-          display: block;
+        top: -2rem;
+        display: block;
       }
     }
 }

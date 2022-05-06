@@ -1,29 +1,11 @@
-/* .workpage-2 {
-    position: relative;
-
-    .cards {
-      margin-top: $margin-large*2;
-
-      li {
-          width: 100%;
-
-          &:nth-last-of-type(even) {
-            margin-top: 5rem;
-          }
-
-          &:nth-last-of-type(odd) {
-            margin-top: -10rem;
-          }
-      }
+.workpage {
+  .page-title {
+      font-size: 5rem;
+      width: 100%;
+      text-align: center;
+      margin-top: $margin-bigger;
+      //margin-bottom: $margin-base;
     }
 } 
 
-@media (min-width: 48rem) {
-    .workpage-2 {    
-        .cards {    
-            li {
-                width: 50%;
-            }
-        }
-    } 
-} */
+

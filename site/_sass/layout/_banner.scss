@@ -1,18 +1,18 @@
 .banner-contact {
-    background: $grey;
+    background: $dark;
     padding-top: $padding-large;
-    padding-bottom: $padding-bigger;
+    padding-bottom: $padding-large;
     color: $white;
     text-align: center;
 
     .banner__text {
         h1 {
-            color: $dark;
+            color: $white;
             margin-bottom: $margin-base;
         }
 
         p {
-            color: $dark;
+            color: $white;
         }
     }
 

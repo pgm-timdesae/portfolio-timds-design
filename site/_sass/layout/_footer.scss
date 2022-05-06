@@ -12,20 +12,28 @@ footer {
     }
 
     .logo-footer {
-        svg {
-            width: 10rem;
-        }
+      padding-top: $padding-big;
+
+      svg {
+          width: 10rem;
+      }
     }
 
     .get-in-touch {
-        margin-bottom: $margin-big;
+      padding-top: $padding-big;
 
-        a:hover {
-            color: $dark;
-        }
+      margin-bottom: $margin-big;
+      display: flex;
+      flex-direction: column;
+
+      a:hover {
+          color: $dark;
+      }
     }
 
     .socials-footer {
+      padding-top: $padding-big;
+
         a {
             display: inline-block;
             margin-bottom: $margin-base;
@@ -49,13 +57,13 @@ footer {
 
 @media (min-width: 48rem) {
     .footer {
-        padding-top: $padding-bigger;
-        padding-bottom: $padding-bigger;
+        padding-top: $padding-large;
+        padding-bottom: $padding-large;
         
         &__flex {
             display: flex;
             flex-direction: row;
-            justify-content: space-around;
+            justify-content: space-between;
             align-items: center;
 
             .get-in-touch {
