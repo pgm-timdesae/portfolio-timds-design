@@ -94,8 +94,11 @@
   padding-bottom: $margin-large;
 
   .test-btn {
-    margin-top: $margin-big;
-    margin-left: 2.5%;
+    display: block;
+    margin: 0 auto;
+    margin-top: $margin-bigger;
+    text-align: center;
+    width: 22rem;
   }
 }
 

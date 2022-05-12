@@ -1,9 +1,11 @@
 .workpage {
+  //background-color: $background;
+
   .page-title {
       font-size: 5rem;
       width: 100%;
       text-align: center;
-      margin-top: $margin-bigger;
+      padding-top: $margin-bigger;
       //margin-bottom: $margin-base;
     }
 } 

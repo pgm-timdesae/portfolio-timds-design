@@ -1,3 +1,14 @@
+/* Pagetitle */
+.pagetitle {
+  text-align: center;
+  font-size: $font-size-big;
+  margin-top: $margin-big*2;
+
+  @media (min-width: 48rem) {
+    font-size: $font-size-big*4;
+  }
+}
+
 /* Hero with my name */
 .hero {
   background-image: url(../images/test-hero.png);
@@ -82,7 +93,7 @@
 
     .hero-content {
       width: 50%;
-      padding-top: 10rem;
+      padding-top: 16rem;
       margin-left: 40%;
           
       .name {

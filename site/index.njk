@@ -32,6 +32,8 @@ description: Welcome to the portfolio of designer & developer Tim De Saeger
 
 
 <section class="h-layout work" id="work">
+  <h1 class="pagetitle">Projects</h1>
+
     {% for work in collections.works | highlighted %}
         {% include "components/work-card.njk" %}
     {% endfor %}
