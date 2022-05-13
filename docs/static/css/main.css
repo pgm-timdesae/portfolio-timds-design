@@ -1181,6 +1181,41 @@ footer .socials-footer a:hover i {
   }
 }
 
+/* Animated title */
+.bar {
+  position: absolute;
+  bottom: 5rem;
+  left: 0;
+  width: 100%;
+  padding: 2rem 0;
+  background-color: transparent;
+  border-top: 1px solid #FFF;
+  border-bottom: 1px solid #FFF;
+  color: white;
+}
+.bar .bar__content {
+  display: flex;
+  width: 400%;
+}
+.bar .bar__content .bar__name {
+  transform: translateX(-60%);
+  font-size: 2rem;
+  font-weight: 300;
+  animation: move 100s linear infinite;
+  margin-right: 2rem;
+  /* Create the animation */
+}
+@keyframes move {
+  to {
+    transform: translateX(100%);
+  }
+}
+
+@media (min-width: 48rem) {
+  .bar .bar__content .bar__name {
+    font-size: 4rem;
+  }
+}
 /* Hero with my name */
 .hero {
   background-image: url(../images/test-hero.png);
@@ -1205,6 +1240,7 @@ footer .socials-footer a:hover i {
   font-size: 1.8rem;
   font-weight: 500;
   color: #0000F9;
+  text-align: center;
 }
 .hero .hero-content .name:nth-of-type(2) {
   text-align: right;
@@ -1233,6 +1269,7 @@ footer .socials-footer a:hover i {
   }
   .hero .hero-content .name {
     font-size: 3rem;
+    text-align: left;
   }
   .hero .hero-content .name:nth-of-type(2) {
     text-align: right;
@@ -1251,7 +1288,7 @@ footer .socials-footer a:hover i {
   }
   .hero .hero-content {
     width: 50%;
-    padding-top: 16rem;
+    padding-top: 13rem;
     margin-left: 40%;
   }
   .hero .hero-content .name {

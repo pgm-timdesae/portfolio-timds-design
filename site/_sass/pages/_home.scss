@@ -9,6 +9,48 @@
   }
 }
 
+/* Animated title */
+.bar {
+  position: absolute;
+  bottom: 5rem;
+  left: 0;
+  width: 100%;
+  padding: $padding-big 0;
+  background-color: transparent;
+  border-top: 1px solid $white;
+  border-bottom: 1px solid $white;
+  color: white;
+
+  .bar__content {
+    display: flex; 
+    width: 400%;
+    
+    .bar__name {
+      transform: translateX(-60%);
+      font-size: 2rem;
+      font-weight: 300;
+      animation: move 100s linear infinite;
+      margin-right: $margin-base*2;
+
+      /* Create the animation */
+      @keyframes move {
+        to { transform: translateX(100%); }
+      }
+    }
+  }
+
+}
+
+@media (min-width: 48rem) {
+  .bar {  
+    .bar__content {    
+      .bar__name {
+        font-size: 4rem;
+      }
+    }
+  }  
+}
+
 /* Hero with my name */
 .hero {
   background-image: url(../images/test-hero.png);
@@ -34,6 +76,7 @@
           font-size: 1.8rem;
           font-weight: 500;
           color: $royal-blue;
+          text-align: center;
   
           &:nth-of-type(2) {
               text-align: right;
@@ -70,6 +113,7 @@
     
         .name {
             font-size: 3rem;
+            text-align: left;
     
             &:nth-of-type(2) {
                 text-align: right;
@@ -93,7 +137,7 @@
 
     .hero-content {
       width: 50%;
-      padding-top: 16rem;
+      padding-top: 13rem;
       margin-left: 40%;
           
       .name {
