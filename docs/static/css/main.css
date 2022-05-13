@@ -695,7 +695,7 @@ p {
 .case:hover .case-btn {
   display: block;
   margin: 0 auto;
-  margin-top: 6.5rem;
+  margin-top: 6rem;
 }
 .case:hover .case__thumbnail {
   transform: scale(1.15);
@@ -724,11 +724,10 @@ p {
 footer {
   padding-bottom: 2rem;
   color: #141414;
-  background-color: #f0f0f0;
   text-align: center;
 }
 footer a, footer p {
-  color: #141414;
+  color: #0000F9;
   font-weight: 300;
   margin-top: 0;
   margin-bottom: 1rem;
@@ -744,9 +743,6 @@ footer .get-in-touch {
   margin-bottom: 2rem;
   display: flex;
   flex-direction: column;
-}
-footer .get-in-touch a:hover {
-  color: #141414;
 }
 footer .socials-footer {
   padding-top: 2rem;
@@ -821,19 +817,31 @@ footer .socials-footer a:hover i {
 }
 
 .case-btn {
-  display: block;
   text-align: center;
-  background-color: #0000F9;
+  border: 2px solid #FFF;
   border-radius: 2rem;
-  padding: 1rem;
   transition: all 0.4s ease;
-  width: 15rem;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 100px;
+  /* span {
+    font-size: $font-size-normal;
+    color: $white;
+    transition: all 0.4s ease;
+    margin-top: $margin-base;
+  } */
 }
-.case-btn span {
-  font-size: 1rem;
+.case-btn i {
+  height: 2rem;
+  width: 2rem;
+  margin: 1.5rem;
+  font-size: 1.3125rem;
   color: #FFF;
-  transition: all 0.4s ease;
-  margin-top: 1rem;
+  transform: rotate(-45deg);
+}
+.case-btn:hover {
+  background-color: #0000F9;
+  border: 2px solid #0000F9;
 }
 
 .test-btn {
@@ -1172,48 +1180,83 @@ footer .socials-footer a:hover i {
 /* Pagetitle */
 .pagetitle {
   text-align: center;
-  font-size: 1.3125rem;
+  font-size: 2.5rem;
   margin-top: 4rem;
 }
 @media (min-width: 48rem) {
   .pagetitle {
-    font-size: 5.25rem;
+    font-size: 5rem;
   }
 }
 
 /* Animated title */
-.bar {
+/* .bar {
   position: absolute;
   bottom: 5rem;
   left: 0;
   width: 100%;
-  padding: 2rem 0;
+  padding: $padding-big 0;
   background-color: transparent;
-  border-top: 1px solid #FFF;
-  border-bottom: 1px solid #FFF;
+  border-top: 1px solid $white;
+  border-bottom: 1px solid $white;
   color: white;
+
+  .bar__content {
+    display: flex; 
+    width: 400%;
+
+    .bar__name {
+      transform: translateX(-60%);
+      font-size: 2rem;
+      font-weight: 300;
+      animation: move 100s linear infinite;
+      margin-right: $margin-base*2;
+
+      @keyframes move {
+        to { transform: translateX(100%); }
+      }
+    }
+  }
+
+} */
+/* @media (min-width: 48rem) {
+  .bar {  
+    .bar__content {    
+      .bar__name {
+        font-size: 4rem;
+      }
+    }
+  }  
+} */
+.wrapper {
+  max-width: 100%;
+  overflow: hidden;
+  position: absolute;
+  bottom: 12vh;
 }
-.bar .bar__content {
-  display: flex;
-  width: 400%;
+.wrapper .marquee {
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  animation: marquee 40s linear infinite;
 }
-.bar .bar__content .bar__name {
-  transform: translateX(-60%);
-  font-size: 2rem;
-  font-weight: 300;
-  animation: move 100s linear infinite;
-  margin-right: 2rem;
-  /* Create the animation */
+.wrapper .marquee h1 {
+  display: inline-block;
+  color: #FFF;
+  font-size: 2.5rem;
 }
-@keyframes move {
-  to {
-    transform: translateX(100%);
+@keyframes marquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
   }
 }
 
 @media (min-width: 48rem) {
-  .bar .bar__content .bar__name {
-    font-size: 4rem;
+  .wrapper .marquee h1 {
+    font-size: 5rem;
   }
 }
 /* Hero with my name */
@@ -1222,7 +1265,6 @@ footer .socials-footer a:hover i {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 7% 75%;
-  background-attachment: fixed;
   height: 130vh;
   margin-top: -5rem;
 }
@@ -1392,13 +1434,6 @@ footer .socials-footer a:hover i {
     width: 40%;
   }
 }
-.workpage .page-title {
-  font-size: 5rem;
-  width: 100%;
-  text-align: center;
-  padding-top: 3rem;
-}
-
 .contact {
   padding-top: 5rem;
   padding-bottom: 3rem;
@@ -1456,8 +1491,7 @@ footer .socials-footer a:hover i {
 .work__heading {
   margin-top: -6rem;
   margin-bottom: 2rem;
-  height: 60vh;
-  background: #E9EAEB;
+  height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1473,6 +1507,26 @@ footer .socials-footer a:hover i {
 .work__heading .primary-button {
   display: block;
   margin-right: auto;
+}
+.work__heading .detail-wrapper {
+  position: absolute;
+  top: 0;
+  height: 50vh;
+  width: 100%;
+  margin: 0 auto;
+  transition: 0.3s ease-in-out all;
+  overflow: hidden;
+  z-index: -100;
+  opacity: 25%;
+}
+.work__heading .detail-wrapper .detail-wrapper__img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: 1;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.75s;
 }
 .work__intro {
   margin-top: 3rem;

@@ -1,16 +1,16 @@
 /* Pagetitle */
 .pagetitle {
   text-align: center;
-  font-size: $font-size-big;
+  font-size: $font-size-huge;
   margin-top: $margin-big*2;
 
   @media (min-width: 48rem) {
-    font-size: $font-size-big*4;
+    font-size: $font-size-huge*2;
   }
 }
 
 /* Animated title */
-.bar {
+/* .bar {
   position: absolute;
   bottom: 5rem;
   left: 0;
@@ -32,16 +32,15 @@
       animation: move 100s linear infinite;
       margin-right: $margin-base*2;
 
-      /* Create the animation */
       @keyframes move {
         to { transform: translateX(100%); }
       }
     }
   }
 
-}
+} */
 
-@media (min-width: 48rem) {
+/* @media (min-width: 48rem) {
   .bar {  
     .bar__content {    
       .bar__name {
@@ -49,7 +48,47 @@
       }
     }
   }  
+} */
+
+.wrapper {
+  max-width: 100%;
+  overflow: hidden;
+  position: absolute;
+  bottom: 12vh;
+
+  .marquee {
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    animation: marquee 40s linear infinite;
+
+    h1 {
+      display: inline-block;
+      color: $white;
+      font-size: $font-size-huge;
+    }
+
+    @keyframes marquee {
+      0% {
+        transform: translate3d(0, 0, 0);
+      }
+      100% {
+        transform: translate3d(-50%, 0, 0);
+      }
+    }
+  }
 }
+
+@media (min-width: 48rem) {
+  .wrapper {
+    .marquee {
+      h1 {
+        font-size: $font-size-huge*2;
+      }
+    }
+  }
+}
+
 
 /* Hero with my name */
 .hero {
@@ -57,7 +96,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 7% 75%;
-  background-attachment: fixed;
+  //background-attachment: fixed;
   height: 130vh;
   margin-top: -5rem;
 

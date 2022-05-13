@@ -1,13 +1,15 @@
 <article class="case">
-  <img class="case__thumbnail" src="./static/images/{{ work.data.thumb }}" alt="thumbnail" loading="lazy">
-  <div class="case__backdrop"></div>
-  <div class="case__content">
-    <h2>{{ work.data.title }}</h2>
-    <h3>{{ work.data.type }}</h3>
-    <a href="/portfolio-timds-design{{ work.url }}" class="case-btn">
-      <span>Discover this case</span>
-    </a>
-  </div>
+  <a href="/portfolio-timds-design{{ work.url }}">
+    <img class="case__thumbnail" src="./static/images/{{ work.data.thumb }}" alt="thumbnail" loading="lazy">
+    <div class="case__backdrop"></div>
+    <div class="case__content">
+      <h2>{{ work.data.title }}</h2>
+      <h3>{{ work.data.type }}</h3>
+      <a href="/portfolio-timds-design{{ work.url }}" class="case-btn">
+          <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+  </a>
 </article>
 
 

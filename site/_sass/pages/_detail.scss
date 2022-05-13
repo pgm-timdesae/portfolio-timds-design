@@ -3,8 +3,8 @@
         margin-top: -6rem;
         margin-bottom: $margin-big;
 
-        height: 60vh;
-        background: $grey;    
+        height: 50vh;
+        //background: $grey;    
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -22,6 +22,29 @@
         .primary-button {
             display: block;
             margin-right: auto;
+        }
+
+        .detail-wrapper {
+          position: absolute;
+          top: 0;
+          height: 50vh;
+          width: 100%;
+          margin: 0 auto;
+          //margin-top: $margin-bigger;
+          transition: 0.3s ease-in-out all;
+          overflow: hidden;
+          z-index: -100;
+          opacity: 25%;
+
+          .detail-wrapper__img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            z-index: 1;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.75s;
+          }
         }
     }
 

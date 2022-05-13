@@ -1,11 +1,11 @@
 footer {
     padding-bottom: 2rem ;
     color: $dark;
-    background-color: $background;
+    //background-color: $background;
     text-align: center;
 
     a, p {
-        color: $dark;
+        color: $royal-blue;
         font-weight: 300;
         margin-top: 0;
         margin-bottom: $margin-base;
@@ -25,10 +25,6 @@ footer {
       margin-bottom: $margin-big;
       display: flex;
       flex-direction: column;
-
-      a:hover {
-          color: $dark;
-      }
     }
 
     .socials-footer {

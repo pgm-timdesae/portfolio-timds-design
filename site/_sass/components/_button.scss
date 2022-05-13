@@ -41,19 +41,35 @@
 }
 
 .case-btn {
-  display: block;
   text-align: center;
-  background-color: $royal-blue;  
+  //background-color: $royal-blue;  
+  border: 2px solid $white;
   border-radius: $border-radius-large;
-  padding: $padding-base;
+  //padding: $padding-base;
   transition: all 0.4s ease;
-  width: 15rem;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 100px;
 
-  span {
+  /* span {
     font-size: $font-size-normal;
     color: $white;
     transition: all 0.4s ease;
     margin-top: $margin-base;
+  } */
+
+  i {
+    height: 2rem;
+    width: 2rem;
+    margin: 1.5rem;
+    font-size: $font-size-big;
+    color: $white;
+    transform: rotate(-45deg);
+  }
+
+  &:hover {
+    background-color: $royal-blue; 
+    border: 2px solid $royal-blue; 
   }
 }
 
