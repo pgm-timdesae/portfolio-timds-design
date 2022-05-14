@@ -4,7 +4,7 @@
         margin-bottom: $margin-big;
 
         height: 50vh;
-        //background: $grey;    
+        //background: $light-blue;    
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -12,6 +12,12 @@
         h1 {
             margin-top: 6rem;
             margin-bottom: $margin-base;
+            text-align: left;
+        }
+
+        h2 {
+          color: $dark;
+          opacity: 0.35;
         }
 
         p {
@@ -19,12 +25,12 @@
             margin-top: 0;
         }
 
-        .primary-button {
-            display: block;
-            margin-right: auto;
+        .test-btn {
+          margin-left: 0;
+          width: 15rem;
         }
 
-        .detail-wrapper {
+        /* .detail-wrapper {
           position: absolute;
           top: 0;
           height: 50vh;
@@ -45,7 +51,7 @@
             overflow: hidden;
             transition: transform 0.75s;
           }
-        }
+        } */
     }
 
     &__intro {
@@ -78,7 +84,7 @@
 
     &__img {
       margin-bottom: $margin-bigger;
-      width: 70%;
+      width: 100vw;
     }
 }
 
@@ -96,5 +102,9 @@
                 width: 35%;
             }
         }
+
+        &__img {
+          width: 70vw;
+        }    
     }
 }

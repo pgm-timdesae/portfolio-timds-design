@@ -86,6 +86,10 @@
   overflow: hidden;
   transition: color 1s;
 
+  i {
+    padding: 0 $padding-base;
+  }
+
   &:hover {
     color: $white;
   }

@@ -4,19 +4,11 @@ layout: layouts/base.njk
 
 <div class="work">
     <section class="work__heading">
-      <div class="detail-wrapper">
-        <div class="detail-wrapper__img">
-          <img src="../../static/images/{{ img1 }}" alt="banner" loading="lazy" class="detail-hero">
-        </div>
-      </div>
-
-      <div class="backdrop"></div>
-
       <div class="h-layout--small">
-          <h1>{{ title }}</h1>
-          <p>{{ short }}</p>
-          <a class="primary-button" href="{{ website }}" target="_blank">
-              <span>view application</span>
+          <h1 class="pagetitle">{{ title }}</h1>
+          <h2>{{ short }}</h2>
+          <a class="test-btn" href="{{ website }}" target="_blank">
+              <span>Live site</span>
               <i class="fas fa-arrow-right"></i>
           </a>  
       </div>
@@ -42,13 +34,6 @@ layout: layouts/base.njk
             </div>
 
             <div>
-                <span class="work__intro__title">Live website</span>
-                <a href="{{website}}" target="_blank">
-                    <p class="work__intro__link">{{ website }}</p>
-                </a>
-            </div>
-
-            <div>
                 <span class="work__intro__title">Github repositorie</span>
                 <a href="{{ gh }}" target="_blank">
                     <p class="work__intro__link">{{ gh }}</p>
@@ -69,6 +54,12 @@ layout: layouts/base.njk
     <div class="work__img h-layout">
         <img src="../../static/images/{{ img3 }}" alt="banner" loading="lazy">
     </div>
+
+    <a href="/portfolio-timds-design/work" class="test-btn">
+      <i class="fas fa-arrow-left"></i>
+      <span>Back to overview</span>
+    </a>
+
 </div>
 
 {% include "components/cta-banner.njk" %}
