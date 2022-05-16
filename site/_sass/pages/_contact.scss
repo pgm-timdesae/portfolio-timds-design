@@ -13,7 +13,7 @@
     &__form {
         label {
             display: block;
-            margin-top: $margin-base;
+            margin-top: $margin-big;
             font-weight: 400;
         }
 
@@ -23,10 +23,15 @@
 
         input, textarea {
             width: 100%;
-            padding: 0.25rem $padding-base;
-            border: 1px solid $dark;
+            padding: $padding-base;
+            border: 1px solid $grey;
             border-radius: 5px;
-            margin-top: $margin-small;
+            margin-top: $margin-base;
+
+            &:focus {
+              outline: none;
+              border: 1px solid $royal-blue;
+            }
         }
 
         input[type="submit"] {
